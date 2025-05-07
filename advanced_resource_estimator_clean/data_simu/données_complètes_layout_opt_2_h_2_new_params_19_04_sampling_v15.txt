@@ -1,0 +1,888 @@
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.001))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.009897104043732452, t=23 days, 10:43:59.453118, exp_t=23 days, 16:21:29.816918), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.001595959595959596))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.010769065781383369, t=23 days, 10:43:59.453118, exp_t=23 days, 16:51:33.351331), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.002191919191919192))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.011585832480609293, t=23 days, 10:43:59.453118, exp_t=23 days, 17:19:45.608634), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.002787878787878788))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.012347539618676628, t=23 days, 10:43:59.453118, exp_t=23 days, 17:46:06.310400), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.003383838383838384))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.013163003027325981, t=23 days, 10:43:59.453118, exp_t=23 days, 18:14:21.272259), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.00397979797979798))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.013977793101297098, t=23 days, 10:43:59.453118, exp_t=23 days, 18:42:37.634649), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.004575757575757576))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.014846161073399422, t=23 days, 10:43:59.453118, exp_t=23 days, 19:12:48.633070), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.005171717171717172))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.01571376423953985, t=23 days, 10:43:59.453118, exp_t=23 days, 19:43:01.227692), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.005767676767676768))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.016580603328304466, t=23 days, 10:43:59.453118, exp_t=23 days, 20:13:15.420035), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.006363636363636364))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.017554884836609275, t=23 days, 10:43:59.453118, exp_t=23 days, 20:47:18.297967), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.00695959595959596))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.018582246014209214, t=23 days, 10:43:59.453118, exp_t=23 days, 21:23:16.867124), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.007555555555555556))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.01966251822890519, t=23 days, 10:43:59.453118, exp_t=23 days, 22:01:11.486388), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.008151515151515153))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.020795524225921125, t=23 days, 10:43:59.453118, exp_t=23 days, 22:41:02.534065), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.008747474747474747))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.022034933267656154, t=23 days, 10:43:59.453118, exp_t=23 days, 23:24:44.475296), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.009343434343434345))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.023326557039738405, t=23 days, 10:43:59.453118, exp_t=24 days, 0:10:23.956553), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.009939393939393939))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.024777594913430456, t=23 days, 10:43:59.453118, exp_t=24 days, 1:01:50.203858), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.010535353535353537))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.02633371591168676, t=23 days, 10:43:59.453118, exp_t=24 days, 1:57:10.177119), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.01113131313131313))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.02799440991584934, t=23 days, 10:43:59.453118, exp_t=24 days, 2:56:24.981840), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.011727272727272729))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.029865982859662576, t=23 days, 10:43:59.453118, exp_t=24 days, 4:03:25.770878), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.012323232323232323))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.031893896360581486, t=23 days, 10:43:59.453118, exp_t=24 days, 5:16:19.982196), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.01291919191919192))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.034183528708839006, t=23 days, 10:43:59.453118, exp_t=24 days, 6:39:00.799247), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.013515151515151515))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.03667995642695254, t=23 days, 10:43:59.453118, exp_t=24 days, 8:09:36.541009), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.014111111111111112))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.03954022768232757, t=23 days, 10:43:59.453118, exp_t=24 days, 9:53:59.253435), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.014707070707070707))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.04276106078572839, t=23 days, 10:43:59.453118, exp_t=24 days, 11:52:16.235528), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.015303030303030304))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.04639128166146733, t=23 days, 10:43:59.453118, exp_t=24 days, 14:06:32.755812), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.0158989898989899))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.05063528231306713, t=23 days, 10:43:59.453118, exp_t=24 days, 16:44:49.553062), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.016494949494949496))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.0555367464859019, t=23 days, 10:43:59.453118, exp_t=24 days, 19:49:23.761777), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.017090909090909094))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.06129207135564052, t=23 days, 10:43:59.453118, exp_t=24 days, 23:28:34.778090), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.01768686868686869))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.06814192285196641, t=23 days, 10:43:59.453118, exp_t=25 days, 3:52:58.530419), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.018282828282828283))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.0763670063069134, t=23 days, 10:43:59.453118, exp_t=25 days, 9:15:38.119091), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.01887878787878788))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.08628222607016611, t=23 days, 10:43:59.453118, exp_t=25 days, 15:52:19.154911), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.019474747474747478))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.09847706126867728, t=23 days, 10:43:59.453118, exp_t=26 days, 0:12:10.234943), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:51.866611, exp_t=0:27:51.866611)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.020070707070707072))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.11423294213530732, t=23 days, 10:15:42.649574, exp_t=26 days, 10:46:26.191564), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:50.472084, exp_t=0:27:50.472084)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.020666666666666667))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.1329418022538894, t=23 days, 10:15:42.649574, exp_t=27 days, 0:28:14.564305), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:50.472084, exp_t=0:27:50.472084)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.021262626262626264))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.15628395470525214, t=23 days, 10:15:42.649574, exp_t=27 days, 18:24:40.426244), ; ,  34018309.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:27:50.472084, exp_t=0:27:50.472084)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 145 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (378, 1)
+Paramètres du layout : nx=None, ny=11
+Nombre de qubit par proc :, 89781
+Nombre de qubit physique total :,34018309.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.021858585858585862))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.0350147169478241, t=24 days, 17:43:38.945768, exp_t=25 days, 15:16:15.692694), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.022454545454545456))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.04278502471326007, t=24 days, 17:43:38.945768, exp_t=25 days, 20:15:56.024458), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.02305050505050505))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.052974752104896994, t=24 days, 17:43:38.945768, exp_t=26 days, 2:56:22.008155), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.023646464646464648))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.06642872297631619, t=24 days, 17:43:38.945768, exp_t=26 days, 11:58:28.041188), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.024242424242424246))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.08433683420975924, t=24 days, 17:43:38.945768, exp_t=27 days, 0:24:45.166886), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.02483838383838384))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.10799244680862974, t=24 days, 17:43:38.945768, exp_t=27 days, 17:36:29.290237), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.025434343434343434))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.13908625039598854, t=24 days, 17:43:38.945768, exp_t=28 days, 17:38:52.964540), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.026030303030303032))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.17956538925239762, t=24 days, 17:43:38.945768, exp_t=30 days, 3:40:27.665639), ; ,  38052286.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:29:23.956025, exp_t=0:29:23.956025)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 153 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (415, 1)
+Paramètres du layout : nx=None, ny=10
+Nombre de qubit par proc :, 91501
+Nombre de qubit physique total :,38052286.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.02662626262626263))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.04991045780896819, t=26 days, 1:11:35.241961, exp_t=27 days, 10:02:09.602962), ; ,  42452692.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:30:57.439966, exp_t=0:30:57.439966)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 161 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (461, 1)
+Paramètres du layout : nx=None, ny=9
+Nombre de qubit par proc :, 91917
+Nombre de qubit physique total :,42452692.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.027222222222222224))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.06688209626191033, t=26 days, 1:11:35.241961, exp_t=27 days, 22:00:15.923116), ; ,  42452692.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:30:57.439966, exp_t=0:30:57.439966)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 161 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (461, 1)
+Paramètres du layout : nx=None, ny=9
+Nombre de qubit par proc :, 91917
+Nombre de qubit physique total :,42452692.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.02781818181818182))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.08982184939519311, t=26 days, 1:11:35.241961, exp_t=28 days, 14:53:27.373442), ; ,  42452692.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:30:57.439966, exp_t=0:30:57.439966)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 161 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (461, 1)
+Paramètres du layout : nx=None, ny=9
+Nombre de qubit par proc :, 91917
+Nombre de qubit physique total :,42452692.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.028414141414141416))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.12064821733299291, t=26 days, 1:11:35.241961, exp_t=29 days, 14:58:13.579617), ; ,  42452692.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:30:57.439966, exp_t=0:30:57.439966)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 161 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (461, 1)
+Paramètres du layout : nx=None, ny=9
+Nombre de qubit par proc :, 91917
+Nombre de qubit physique total :,42452692.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.029010101010101014))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.16134985689506964, t=26 days, 1:11:35.241961, exp_t=31 days, 1:28:31.748535), ; ,  42452692.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:30:57.439966, exp_t=0:30:57.439966)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 161 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (461, 1)
+Paramètres du layout : nx=None, ny=9
+Nombre de qubit par proc :, 91917
+Nombre de qubit physique total :,42452692.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.029606060606060608))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.04994497432085876, t=27 days, 9:12:34.023047, exp_t=28 days, 19:45:33.674469), ; ,  47239830.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:32:32.553222, exp_t=0:32:32.553222)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 170 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (519, 1)
+Paramètres du layout : nx=None, ny=8
+Nombre de qubit par proc :, 90885
+Nombre de qubit physique total :,47239830.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.030202020202020202))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.06887471172581938, t=27 days, 9:12:34.023047, exp_t=29 days, 9:49:22.051876), ; ,  47239830.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:32:32.553222, exp_t=0:32:32.553222)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 170 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (519, 1)
+Paramètres du layout : nx=None, ny=8
+Nombre de qubit par proc :, 90885
+Nombre de qubit physique total :,47239830.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.0307979797979798))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.09458086138090094, t=27 days, 9:12:34.023047, exp_t=30 days, 5:51:43.613709), ; ,  47239830.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:32:32.553222, exp_t=0:32:32.553222)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 170 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (519, 1)
+Paramètres du layout : nx=None, ny=8
+Nombre de qubit par proc :, 90885
+Nombre de qubit physique total :,47239830.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.0313939393939394))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.12983812121474203, t=27 days, 8:39:31.538154, exp_t=31 days, 10:38:23.174189), ; ,  47239830.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:32:30.923906, exp_t=0:32:30.923906)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 170 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (519, 1)
+Paramètres du layout : nx=None, ny=8
+Nombre de qubit par proc :, 90885
+Nombre de qubit physique total :,47239830.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03198989898989899))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.17527100470726853, t=27 days, 8:39:31.538154, exp_t=33 days, 4:12:41.618965), ; ,  47239830.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:32:30.923906, exp_t=0:32:30.923906)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 170 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (519, 1)
+Paramètres du layout : nx=None, ny=8
+Nombre de qubit par proc :, 90885
+Nombre de qubit physique total :,47239830.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.032585858585858586))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.06088732997263413, t=28 days, 16:42:05.546357, exp_t=30 days, 13:21:12.512582), ; ,  52411912.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:34:06.115425, exp_t=0:34:06.115425)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 178 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 88261
+Nombre de qubit physique total :,52411912.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03318181818181819))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.08428902083599854, t=28 days, 16:42:05.546357, exp_t=31 days, 8:05:41.574548), ; ,  52411912.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:34:06.115425, exp_t=0:34:06.115425)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 178 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 88261
+Nombre de qubit physique total :,52411912.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03377777777777778))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.11662054515058085, t=28 days, 16:07:27.834348, exp_t=32 days, 10:58:05.090341), ; ,  52411912.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:34:04.407847, exp_t=0:34:04.407847)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 178 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 88261
+Nombre de qubit physique total :,52411912.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.034373737373737376))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.037013335641152945, t=30 days, 0:11:37.069666, exp_t=31 days, 3:52:29.920954), ; ,  57301832.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:35:39.677629, exp_t=0:35:39.677629)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 186 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 96505
+Nombre de qubit physique total :,57301832.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03496969696969697))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.051628050663666936, t=30 days, 0:11:37.069666, exp_t=31 days, 15:23:59.894232), ; ,  57301832.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:35:39.677629, exp_t=0:35:39.677629)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 186 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 96505
+Nombre de qubit physique total :,57301832.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.035565656565656564))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.07162476851655253, t=30 days, 0:11:37.069666, exp_t=32 days, 7:45:25.378426), ; ,  57301832.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:35:39.677629, exp_t=0:35:39.677629)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 186 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 96505
+Nombre de qubit physique total :,57301832.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.036161616161616165))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.09876069567251078, t=30 days, 0:11:37.069666, exp_t=33 days, 7:06:53.136330), ; ,  57301832.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:35:39.677629, exp_t=0:35:39.677629)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 186 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 96505
+Nombre de qubit physique total :,57301832.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03675757575757576))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.13572471181121204, t=29 days, 23:35:24.130541, exp_t=34 days, 16:35:36.804538), ; ,  57301832.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:35:37.891788, exp_t=0:35:37.891788)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 186 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (593, 1)
+Paramètres du layout : nx=None, ny=7
+Nombre de qubit par proc :, 96505
+Nombre de qubit physique total :,57301832.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.037353535353535354))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.054884374930606605, t=31 days, 7:03:20.426734, exp_t=33 days, 2:40:14.439012), ; ,  63219810.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:37:11.375729, exp_t=0:37:11.375729)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 195 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 91389
+Nombre de qubit physique total :,63219810.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.037949494949494955))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.0757393150838187, t=31 days, 7:03:20.426734, exp_t=33 days, 20:36:05.614766), ; ,  63219810.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:37:11.375729, exp_t=0:37:11.375729)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 195 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 91389
+Nombre de qubit physique total :,63219810.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03854545454545455))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.10391385100194928, t=31 days, 7:03:20.426734, exp_t=34 days, 22:09:04.291905), ; ,  63219810.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:37:11.375729, exp_t=0:37:11.375729)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 195 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 91389
+Nombre de qubit physique total :,63219810.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.039141414141414144))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Meilleur cas : PhysicalCost(p=0.14143925346726938, t=31 days, 7:03:20.426734, exp_t=36 days, 10:47:04.370731), ; ,  63219810.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:37:11.375729, exp_t=0:37:11.375729)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 195 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 91389
+Nombre de qubit physique total :,63219810.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.03973737373737374))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.05240141624803951, t=32 days, 14:31:16.722927, exp_t=34 days, 9:47:38.730723), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04033333333333333))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.07212020407362407, t=32 days, 14:31:16.722927, exp_t=35 days, 3:20:36.278939), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04092929292929293))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.0988169606595034, t=32 days, 14:31:16.722927, exp_t=36 days, 4:19:36.189020), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04152525252525253))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.13440037327328802, t=32 days, 14:31:16.722927, exp_t=37 days, 16:01:20.057461), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04212121212121212))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.1810369416808384, t=32 days, 14:31:16.722927, exp_t=39 days, 19:30:09.273826), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04271717171717172))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.2407584683986509, t=32 days, 14:31:16.722927, exp_t=42 days, 22:39:42.803988), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04331313131313132))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.3152699203291385, t=32 days, 14:31:16.722927, exp_t=47 days, 14:49:01.917471), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.04390909090909091))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.40483848323287375, t=32 days, 14:31:16.722927, exp_t=54 days, 18:48:17.841953), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0
+
+ Params=Params(type='surface_small_procs_litinski4', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=0.044505050505050506))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Meilleur cas : PhysicalCost(p=0.5076885219595174, t=32 days, 14:31:16.722927, exp_t=66 days, 5:29:03.091483), ; ,  68616802.0
+Temps max entre deux lectures :,PhysicalCost(p=None, t=0:38:44.859670, exp_t=0:38:44.859670)
+Nombre de qubits en mémoire :, None
+Temps pour effectuer une correction d erreur complète : 203 ms
+Temps si tout était en 1 mode spatial (calcul naïf) :,None
+Nombre de processeurs :, (691, 1)
+Paramètres du layout : nx=None, ny=6
+Nombre de qubit par proc :, 99197
+Nombre de qubit physique total :,68616802.0

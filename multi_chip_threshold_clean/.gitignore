@@ -1,0 +1,8 @@
+__pycache__/*
+.spyproject/
+surface_code_threshold_*.pdf
+splitted_surface_code_pseudothreshold_*.pdf
+splitted_surface_code_pseudothreshold2_*.pdf
+splitted_surface_code_pseudothreshold3_*.pdf
+circuit.html
+circuit1.html
