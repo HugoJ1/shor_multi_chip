@@ -613,8 +613,8 @@ def fit(nb_shots, data_tofit, data, fits, data_type, method):
         # alpha3test = 0.026
         # alphactest = 372s
         pbth = 7.3e-3
-        alpha3test = 0.012
-        alphactest = 0.34
+        alpha3test = 0.053
+        alphactest = 0.21
         if data_type == 'p fixed':
             p = data_tofit[list(data.keys())[0]][3][0]
         if data_type == 'p_bell fixed':
@@ -648,7 +648,7 @@ def fit(nb_shots, data_tofit, data, fits, data_type, method):
         mini = Minimizer(objective_coupled_full, fit_params3, nan_policy='propagate')
         out3 = mini.minimize(method=method)
         print(fit_report(out3))
-        # Calcule de l'intervalle de confiance
+        # confidence interval
         ci = conf_interval(mini, out3)
         report_ci(ci)
         # Plot the result
@@ -732,11 +732,10 @@ def fit_3D(data_tofit, data, P_bulk, P_seam, fit_interval, fit_3D_type, model=No
         mini = Minimizer(objective_coupled_3d_all_para_naive, fit_params3, nan_policy='propagate')
         # fit avec leastsq
         out3 = mini.minimize(method='leastsq')
-        # out3 = minimize(objective_coupled_3d, fit_params3)
         print(fit_report(out3))
-        # Calcule de l'intervalle de confiance
-        # ci = conf_interval(mini, out3)
-        # report_ci(ci)
+        # Confidence intevral computation
+        ci = conf_interval(mini, out3)
+        report_ci(ci)
         # Reduced chi-squared statistic
         print(r"N-Nparam="+f'{out3.nfree}')
 
@@ -783,11 +782,10 @@ def fit_3D(data_tofit, data, P_bulk, P_seam, fit_interval, fit_3D_type, model=No
         mini = Minimizer(objective_coupled_3d_all_para, fit_params3, nan_policy='propagate')
         # fit avec leastsq
         out3 = mini.minimize(method='leastsq')
-        # out3 = minimize(objective_coupled_3d, fit_params3)
         print(fit_report(out3))
-        # Calcule de l'intervalle de confiance
-        # ci = conf_interval(mini, out3)
-        # report_ci(ci)
+        # Confidence interval
+        ci = conf_interval(mini, out3)
+        report_ci(ci)
         # Reduced chi-squared statistic
         print(r"N-Nparam="+f'{out3.nfree}')
 
@@ -827,13 +825,12 @@ def threed_full_plot(data_tofit, out3, P_bulk, P_seam, filtered=False, model='v2
                     points.append((p[i], ps[i], p_log[i]))
             else:
                 points.append((p[i], ps[i], p_log[i]))
-        # Listes contenant des triplets de la forme p_bulk,p_bell,p_logic
+        # Lists of triplets p_bulk,p_bell,p_logic
         x, y, z = zip(*points)
-        # Listes contenant des triplets de la forme p_bulk,p_bell,p_logic
         log_grid_x, log_grid_y = np.mgrid[min(np.log10(x)):max(np.log10(x)):len(P_bulk)*1j,
                                           min(np.log10(y)):max(np.log10(y)):len(P_seam)*1j]
         grid_x, grid_y = 10**log_grid_x, 10**log_grid_y
-        # # Liste contenant error_model(p_bulk,p_bell)
+        # List with error_model(p_bulk,p_bell)
         if model == 'v2':
             fitted_z = coupled_error_model_v2(
                 grid_y, grid_x, alpha1, alpha2, alpha3, psth, pbth, alphac, d)
@@ -959,7 +956,6 @@ def plot_sliced_fixed_pbulk(data_tofit, out3, P_bulk, P_seam, fixed_pbulk, filte
         color_index += 1  # Increment the index
         marker = markers[marker_index % len(markers)]
         marker_index += 1  # Increment the index
-        # plt.scatter(y_sorted, z_sorted, label=f'Data (d={d})', marker='o')
         plt.errorbar(y_sorted, z_sorted, yerr=sigma_sorted,
                      fmt=marker, capsize=5, label=f'd={d}', color=color, ecolor=color)
         plt.plot(y_sorted, fitted_z, label=None, color=color, linestyle='--')
@@ -1195,7 +1191,6 @@ def plot_sliced_fixed_pbulk_naive(data_tofit, out3, P_bulk, P_seam, fixed_pbulk=
         color_index += 1  # Increment the index
         marker = markers[marker_index % len(markers)]
         marker_index += 1  # Increment the index
-        # plt.scatter(y_sorted, z_sorted, label=f'Data (d={d})', marker='o')
         plt.errorbar(y_sorted, z_sorted, yerr=sigma_sorted,
                      fmt=marker, capsize=5, label=f'd={d}', color=color, ecolor=color)
         plt.plot(y_sorted, fitted_z, label=None, color=color, linestyle='--')

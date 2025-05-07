@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Estimation du seuil d'un code de répétition avec télémesure.
-
-Ce code est construit en trois temps:
-    1. les stabilisateurs sont définis simplement en disant quel qubit joue
-    quel rôle ;
-    2. le circuit est synthétisé, uniquement à partir de l'information "quel
-       qubit est où ?" (le cycle du code de surface est toujours le même et
-       seules les positions des qubits importent) ;
-    3. Du circuit, sinter fait les calculs pour obtenir le seuil.
+"""threshold estimation for distributed surface code.
 """
 from collections import namedtuple
 import scipy
@@ -110,7 +102,7 @@ def nbr_cycle(d):
 
 
 def surf_qubits_stabs(dist_i, dist_j=None, shift=(0, 0)):
-    """Génère les qubits et stabilisateur d'un qubit logique."""
+    """Generate qubits and stabs of a surface code."""
     if dist_j is None:
         dist_j = dist_i
     data_qubits = [Coord(2*i, 2*j)
@@ -433,6 +425,7 @@ def _surface_code_cycle(dist_i, dist_j, data_qubits, x_stabs, z_stabs,
     La teleportation de porte fonctionne seulement avec une
     seule frontière pour le moment.
     """
+    # naive seam is for a straight line cut with teleported measurement
     if naive_seam and split_col_list % 2 == 1:
         # Create the circuit
         qubits_list, qubits_index, qubits, qubits_id = _prepare_ids(
@@ -452,7 +445,6 @@ def _surface_code_cycle(dist_i, dist_j, data_qubits, x_stabs, z_stabs,
         for dirr_x, dirr_z in zip([(-1, 1), (-1, -1), (1, 1), (1, -1)],
                                   [(-1, 1), (1, 1), (-1, -1), (1, -1)]):
             cnot_args = []
-            # Temporary circuit to identify iddle qubits
             circuit_temp = stim.Circuit()
             for x in qubits['stabs_virtual']:
                 if x in qubits['z'] and x + dirr_z in data_qubits:
@@ -479,7 +471,7 @@ def _surface_code_cycle(dist_i, dist_j, data_qubits, x_stabs, z_stabs,
         circuit.append("MR", qubits_id['stabs'])
 
     else:
-        # Si on a donné une liste on regarde la parité du premier élément pour savoir quel splitting faire
+        # if we gave a list we look at the parity of the first element to know which splitting to do
         if isinstance(split_col_list, list):
             split_col = split_col_list[0]
         else:
@@ -593,7 +585,6 @@ def _add_surface_code_detectors(bloc, qubits, nb_stabs, x=True, z=True,
             for s in (qubits['x'] if x else []) + (qubits['z'] if z else []):
                 mes = [stim.target_rec(qubits['stabs'].index(s) - nb_stabs)]
                 if not first:  # Comparison with last turn.
-                    # Teleported cnot only works for one seam for the moment
                     nb_bell_measurement = len(qubits['z_tel_split']) + \
                         len(qubits['x_tel_split']) - 2
                     mes += [stim.target_rec(qubits['stabs'].index(s) - 2 *
@@ -602,7 +593,6 @@ def _add_surface_code_detectors(bloc, qubits, nb_stabs, x=True, z=True,
             for s in (qubits['x_tel'] if x else []) + (qubits['z_tel'] if z else []):
                 mes = [stim.target_rec(qubits['stabs'].index(s) - nb_stabs)]
                 if not first:  # Comparison with last turn
-                    # Teleported cnot only works for one seam for the moment
                     nb_bell_measurement = len(qubits['z_tel_split']) + \
                         len(qubits['x_tel_split']) - 2
                     mes += [stim.target_rec(qubits['stabs'].index(s)-2 *
@@ -644,7 +634,6 @@ def _add_final_measure(circuit, kind, nb_data, nb_stabs, qubits, qubits_id,
         raise ValueError("'kind' must be 'x' or 'z'!")
     circuit.append("TICK")
     circuit.append({'x': "MX", 'z': 'M'}[kind], qubits_id['data'])
-    # Vérification des stabiliseurs à la main après mesure
     if isinstance(split_col, list):
         split_col_parity = split_col[0]
     else:
@@ -707,7 +696,7 @@ def _add_final_measure(circuit, kind, nb_data, nb_stabs, qubits, qubits_id,
 
 def gen_memory(dist_i, dist_j, repeat, kind='x', split_col=None,
                probas=Probas(0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1), plot=False, naive_seam=False):
-    """Génère le circuit pour une mémoire où on stoque |+> ou |0>.
+    """Generate the circuit for a memory storing |+> or |0>.
 
     kind : 'x' or 'z'
     """
@@ -719,7 +708,7 @@ def gen_memory(dist_i, dist_j, repeat, kind='x', split_col=None,
     # Prepare qubits and stabilizers
     data_qubits, x_stabs, z_stabs = surf_qubits_stabs(dist_i, dist_j)
     x_tel = z_tel = None
-    # Choose between old version and new splitting
+    # Choose the splitting method
     if split_col is not None:
         data_qubits, x_stabs, z_stabs, x_tel, z_tel = split_surf_code(
             data_qubits, x_stabs, z_stabs, split_col, naive_seam=naive_seam)
@@ -776,7 +765,7 @@ def gen_memory(dist_i, dist_j, repeat, kind='x', split_col=None,
     if dist_i == 3 and dist_j == 3:
         with open('circuits/diagram_without_error.svg', 'w') as f:
             print(circuit.diagram("timeline-svg"), file=f)
-            # print(repr(circuit))
+
     # Prepare the list of qubits involved in bell pairs
     if split_col is not None:
         if split_col_parity % 2 == 0 or naive_seam:
@@ -865,16 +854,14 @@ def _plot(samples: list[sinter.TaskStats],
             group_func=lambda stat: label.format_map(stat.json_metadata),
             filter_func=lambda stat: stat_error(
                 stat.errors/stat.shots, stat.shots) < stat.errors/stat.shots/4,
-            x_func=lambda stat: stat.json_metadata[x_axis],
-            # highlight_max_likelihood_factor = 1
+            x_func=lambda stat: stat.json_metadata[x_axis]
         )
     else:
         sinter.plot_error_rate(
             ax=ax,
             stats=samples,
             group_func=lambda stat: label.format_map(stat.json_metadata),
-            x_func=lambda stat: stat.json_metadata[x_axis],
-            # highlight_max_likelihood_factor = 1−1)z1 ZL1Z
+            x_func=lambda stat: stat.json_metadata[x_axis]
         )
     ax.loglog()
     ax.set_ylim(ylim)
@@ -911,7 +898,6 @@ def _plot_per_round(samples: list[sinter.TaskStats],
 
             x_func=lambda stat: stat.json_metadata[x_axis],
             failure_units_per_shot_func=lambda stats: stats.json_metadata['k']
-            # highlight_max_likelihood_factor = 1
         )
     else:
         sinter.plot_error_rate(
@@ -920,7 +906,6 @@ def _plot_per_round(samples: list[sinter.TaskStats],
             group_func=lambda stat: label.format_map(stat.json_metadata),
             x_func=lambda stat: stat.json_metadata[x_axis],
             failure_units_per_shot_func=lambda stats: stats.json_metadata['k']
-            # highlight_max_likelihood_factor = 1
         )
     ax.loglog()
     ax.set_ylim(ylim)
@@ -957,7 +942,8 @@ def _collect(tasks, file, **kwargs):
 def generate_example_tasks(kind, rep, probas):
     """Generate surface code circuit without splitting tasks using Stim's circuit generation.
 
-    For regular surface code."""
+    For regular surface code.
+    """
     # As a reminder, Probas=['Hadam','idle_data','idle_bell','depol', 'prep', 'mes', 'bell']
     for p in tqdm([0.0001, 0.0003, 0.0005, 0.0006, 0.0007, 0.0008, 0.0009, 0.001, 0.002, 0.003,
                    0.004, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3], desc='Outer loop'):
@@ -993,7 +979,8 @@ def generate_example_tasks_critical(kind, rep, probas):
             )
 
 
-def surface_code_threshold(kind='x', rep=nbr_cycle, probas=Probas(1, 1, 1, 1, 1, 1, 0), filtered=True, read_file=None):
+def surface_code_threshold(kind='x', rep=nbr_cycle, probas=Probas(1, 1, 1, 1, 1, 1, 0),
+                           filtered=True, read_file=None):
     """Regular surface code."""
     samples = _collect_and_print(generate_example_tasks(kind, rep, probas), fits=['general with error'
                                                                                   ], data_type='no split',
@@ -1174,6 +1161,8 @@ def splitted_surface_code_pseudothreshold3(kind='z', p=1e-3, version=2, rep=nbr_
                     title=" ",
                     filename=f"splitted_surface_code_p_fixed_{kind}_{p}_per_round.pdf", filtered=True)
 
+# %%% Naive splitting with straight line of telemesure
+
 
 def generate_telemesures_tasks_naive_split(kind, p, version=1, rep=nbr_cycle):
     """Do the circuit for splitted surface code with fixed p_bulk."""
@@ -1214,7 +1203,7 @@ def splitted_surface_code_pseudothreshold_naive_split(kind='z', p=1e-3,
 
 # %%% Circuit for 3D fit, free p_bulk and p_bell.
 def generate_telemesures_tasks_3d(P_bulk, P_seam, kind, rep):
-    """Genere les circuits pour faire le fit 3d."""
+    """Generate the circuits for the 3D fit."""
     for p in tqdm(P_bulk, desc='Loop on p_bulk'):
         for p_bell in tqdm(P_seam, desc='Inner loop on p_bell', leave=False):
             for d in [3, 5, 7, 9, 11, 13]:
@@ -1347,7 +1336,6 @@ def plot_error_model(kind, d):
     circuit = gen_memory(d, d, d, kind, d+1)
     circuit2 = gen_memory(d, d, d, kind, 0)
     circuit3 = gen_memory(d, d, d, kind, d+2)
-    circuit.to_file("Circuit_test_base.txt")
     circuit.diagram("matchgraph-3d")
     dem = circuit.detector_error_model()
     with open('matching_graph/matching_graph_w_bell.svg', 'w') as f:
@@ -1376,12 +1364,9 @@ def _3d_fit_sample(p_bulk_min, p_bulk_max, p_seam_min, p_seam_max, kind='z', lat
 
     Every parameters of the ansatz are fit
     With logical error, bulk error and seam errors as axis.
-    fit_interval est (pmin,pmax,psmin,psmax, ratio_std_err) definissant sur quelles datas le fit
-    est fait.
+    fit_interval is (pmin,pmax,psmin,psmax, ratio_std_err) fixing the points over which we fit.
     """
     # # Creates the space of points to be covered
-    # P_bulk = np.linspace(p_bulk_min, p_bulk_max, lattice_size)
-    # P_seam = np.linspace(p_seam_min, p_seam_max, lattice_size)
     # Generate log-scaled array
     P_bulk = np.logspace(np.log10(p_bulk_min), np.log10(p_bulk_max), num=lattice_size, base=10)
     P_seam = np.logspace(np.log10(p_seam_min), np.log10(p_seam_max), num=lattice_size, base=10)
@@ -1412,9 +1397,7 @@ def del_last_simu():
 
 
 # %% Partie exécutable
-# NOTE: This is actually necessary! If the code inside 'main()' was at the
-# module level, the multiprocessing children spawned by sinter.collect would
-# also attempt to run that code.
+
 if __name__ == '__main__':
 
     del_last_simu()
@@ -1432,8 +1415,8 @@ if __name__ == '__main__':
 
     # Naive splitting with halved distance
 
-    surface_code_pseudotreshold(kind='z', data_type='naive split p fixed', version=1, p_fixed=0e-3,
-                                read_file='data_simu/naive_seam_halved_d.csv')
+    # surface_code_pseudotreshold(kind='z', data_type='naive split p fixed', version=1, p_fixed=0e-3,
+    #                             read_file='data_simu/naive_seam_halved_d.csv')
     # Splitted surface code with one interface (as fig.2) with bell pair noise fixed
 
     # surface_code_pseudotreshold(kind='z', data_type='p_bell fixed',
@@ -1457,11 +1440,11 @@ if __name__ == '__main__':
 
     # Full 3D fit on several values of p and p_bell with the full ansatz
 
-    # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
-    #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
-    #     read_file='data_simu/sampling_3d_v15.csv',
-    #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
-    #     fit_3D_type=['full'])
+    data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
+        1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
+        read_file='data_simu/sampling_3d_v15.csv',
+        fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
+        fit_3D_type=['full'])
 
     # Simulation of a 2 interface rectangular patch reproducing the layout spacing
     # verification of the validity of the logical error rate fitted above in the multi-seam setting.
