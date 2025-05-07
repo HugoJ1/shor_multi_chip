@@ -1,31 +1,24 @@
-from magic_state_factory import MagicStateFactory
-from functools import lru_cache
-import mpmath
-from mpmath import mp
 import numpy as np
-from scipy import optimize
-from definitions import (
-    z,
-    one,
-    projx,
-    kron,
-    trace,
-    apply_rot,
-    plog,
-    storage_x_5,
-    storage_z_5,
-    init5qubit,
-    ideal15to1,
-)
 import re
 import matplotlib.pyplot as plt
-from onelevel15to1 import one_level_15to1_state
-from twolevel15to1 import cost_of_two_level_15to1
+try:
+    from twolevel15to1 import cost_of_two_level_15to1
+except ModuleNotFoundError as e:
+    raise ModuleNotFoundError(
+        "Error: The module 'magicstates_factories.twolevel15to1' could not be found.\n\n "
+        "Please ensure to clone the repository from https://github.com/litinski/magicstates\n"
+        "You will need the associated Python files : definitions.py, magic_state_factory.py,"
+        " onelevel15to1.py, twolevel8toCCZ.py, twolevel15to1.py\n"
+        "Put them in the main folder.\n"
+        "Beware to also accordingly adjust surface code threshold in definitions.py plog function"
+    ) from e
 from twolevel8toCCZ import cost_of_two_level_8toccz
 import pickle
 from tqdm import tqdm
 
-# To reproduce our results, make sure in definitions.py the plog functions use a threshold of 7.6e-3 instead of the initial 1e-2.
+# To reproduce our results, make sure in definitions.py the plog functions use a threshold of 7.6e-3
+# instead of the initial 1e-2.
+
 
 def merge_text_file(file1_path, file2_path, output_file_path):
     """Create the concatenation of both file's text."""
@@ -41,8 +34,7 @@ def merge_text_file(file1_path, file2_path, output_file_path):
 
 
 def creation_tableau_15to1():
-    """Fonction qui créer un fichier avec un tableau d'usines possibles."""
-    # Appeler la fonction pour obtenir le résultat
+    """Create a table with two level 15 to 1 factories parameters."""
     pphys = 1e-3
     for dx in range(11, 16, 2):
         for dz in range(5, 10, 2):
@@ -52,26 +44,19 @@ def creation_tableau_15to1():
                         dm = dz
                         dm2 = dz2
                         resultat = cost_of_two_level_15to1(pphys, dx, dz, dm, dx2, dz2, dm2, nl1)
-                        with open("usines_litinski_15to1_15to1_test_new_th.txt", "a") as fichier:
+                        with open("usines_15to1_15to1_test.txt", "a") as fichier:
                             fichier.write("/n"+repr(resultat))
 
 
 def creation_tableau_8toCCZ():
-    """Fonction qui créer un fichier avec un tableau d'usines possibles."""
-    # Appeler la fonction pour obtenir le résultat
+    """Create a table with 15 to 1 into 8 to CCZ factories parameters."""
     pphys = 1e-3
-    # list_dx = range(15, 20, 2)
-    # list_dz = range(7, 12, 2)
-    # list_dx2 = range(27, 34, 2)
-    # list_dz2 = range(15, 22, 2)
-    # list_nl1 = [4, 6]
     list_dx = range(17, 24, 2)
     list_dz = range(9, 14, 2)
     list_dx2 = range(29, 36, 2)
     list_dz2 = range(17, 22, 2)
     list_nl1 = [4, 6]
     total_iterations = len(list_dx) * len(list_dz) * len(list_dx2) * len(list_dz2) * len(list_nl1)
-    # Barre de progression pour suivre les itérations
     with tqdm(total=total_iterations, desc="Calculs en cours", unit="itérations") as pbar:
         for dx in list_dx:
             for dz in list_dz:
@@ -82,7 +67,7 @@ def creation_tableau_8toCCZ():
                             dm2 = dz2
                             resultat = cost_of_two_level_8toccz(
                                 pphys, dx, dz, dm, dx2, dz2, dm2, nl1)
-                            with open("usines_litinski_15to1_8toCCZ_test_new_th_v2.txt", "a") as fichier:
+                            with open("usines_15to1_8toCCZ_test.txt", "a") as fichier:
                                 fichier.write("\n" + repr(resultat))
                             print(repr(resultat))
                             pbar.update(1)  # Incrémente la barre de progression
@@ -98,13 +83,12 @@ def remove_duplicates(input_list):
 
 
 def plot_usines(file_path):
-    """
-    Genere un plot avec toutes les usines contenues dans le fichier donné.
+    """Generate a plot with all the factories of the given file.
 
     Args:
-    - fichier txt avec les données d'usine séparés par des \n
+    - fichier txt with data on factory separated by a new line.
     """
-    # Expressions régulières pour extraire les valeurs
+    # Patterns
     output_error_pattern = re.compile(r'Output error: ([\d\.e-]+)')
     qubitcycles_pattern = re.compile(r'Qubitcycles: (\d+)')
     qubits_pattern = re.compile(r'Qubits: (\d+)')
@@ -116,13 +100,13 @@ def plot_usines(file_path):
     dz2_pattern = re.compile(r'dz2=(\d+)')
     dm2_pattern = re.compile(r'dm2=(\d+)')
     nl1_pattern = re.compile(r'nl1=(\d+)')
-    # Listes pour stocker les valeurs
+    # Storage lists
     output_errors = []
     qubitcycles = []
     factories = []
-    # Lecture et extraction des données
+    # data extraction
     with open(file_path, 'r') as file:
-        content = file.read().split('\n\n')  # Séparer par les marqueurs "/n"
+        content = file.read().split('\n\n')
         for entry in content:
             output_error_match = output_error_pattern.search(entry)
             qubitcycles_match = qubitcycles_pattern.search(entry)
@@ -135,7 +119,6 @@ def plot_usines(file_path):
             dz2_match = dz2_pattern.search(entry)
             dm2_match = dm2_pattern.search(entry)
             nl1_match = nl1_pattern.search(entry)
-            # Ajouter les valeurs si elles sont trouvées
             if output_error_match and qubitcycles_match:
                 factory = {}
                 factory['Output error'] = float(output_error_match.group(1))
@@ -150,7 +133,6 @@ def plot_usines(file_path):
                 factory['dm2'] = float(dm2_match.group(1))
                 factory['nl1'] = float(nl1_match.group(1))
                 factories.append(factory)
-    # Création du graphique
     factories = remove_duplicates(factories)
     output_errors = [factory['Output error'] for factory in factories]
     qubitcycles = [factory['Qubitcycles'] for factory in factories]
@@ -159,7 +141,7 @@ def plot_usines(file_path):
     plt.xlabel('Output Error')
     plt.ylabel('Qubitcycles')
     plt.title('Qubitcycles vs. Output Error')
-    plt.xscale('log')  # Échelle logarithmique pour mieux voir les variations
+    plt.xscale('log')
     plt.yscale('log')
     plt.grid(True, which="both", ls="--")
     plt.show()
@@ -200,7 +182,8 @@ def best_factory(target_output_error, output_errors, qubitcycles, factories, cri
     return best_factory
 
 
-def best_factories_for_targets(target_output_errors, output_errors, qubitcycles, factories, criteria='Qubitcycles'):
+def best_factories_for_targets(target_output_errors, output_errors, qubitcycles, factories,
+                               criteria='Qubitcycles'):
     """
     Finds the best factory (with minimum qubitcycles) for each target_output_error
     in the list target_output_errors. Each factory's output_error should be within
@@ -245,7 +228,6 @@ def best_factories_for_targets(target_output_errors, output_errors, qubitcycles,
     plt.scatter(output_errors_best, qubits_best, color='purple', s=50, label='Selected Factories')
     plt.xlabel('Output Error', fontsize=17)
     plt.ylabel('Qubits', fontsize=17)
-    # Modification de la taille de la police des ticks
     plt.tick_params(axis='both', which='both', labelsize=14)
     # plt.title('Qubits vs. Output Error with Chosen Best 15-to-1 => 8-to-CCZ Factories')
     # plt.title('Qubits vs. Output Error with Chosen Best 15-to-1 => 15-to-1 Factories')
@@ -257,7 +239,7 @@ def best_factories_for_targets(target_output_errors, output_errors, qubitcycles,
     return best_factories_no_duplicate
 
 
-# Créer les usines
+# # Créer les usines
 # creation_tableau_15to1()
 # creation_tableau_8toCCZ()
 
@@ -273,12 +255,12 @@ target_output_errors = np.logspace(-14, -11, num=10)
 best_factories = best_factories_for_targets(
     target_output_errors, output_errors, qubit_cycles, factories, criteria='Qubits')
 # Save the dictionary to a file
-with open('/home/hjacinto/biblio/code_litinski/magicstates-master/Python/factories_8toCCZ_qubits_10_fact_new_th.pkl', 'wb') as f:
+with open('factories_8toCCZ_qubits_10_fact_new_th.pkl', 'wb') as f:
     pickle.dump(best_factories, f)
 
 print(best_factories)
 # Open the pickle file in read-binary mode and load the data
-# with open('/home/hjacinto/biblio/code_litinski/magicstates-master/Python/factories_8toCCZ_qubits_10_fact.pkl', 'rb') as pkl_file:
+# with open('factories_8toCCZ_qubits_10_fact_new_th.pkl', 'rb') as pkl_file:
 #     my_list = pickle.load(pkl_file)
 
 # # Print the loaded list

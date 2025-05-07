@@ -1,0 +1,2313 @@
+
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 8.1e-12
+Qubits: 57000
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6229603
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 8.1e-12
+Qubits: 57000
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6229603
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 8.2e-12
+Qubits: 69686
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5077382
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 5.1e-12
+Qubits: 60884
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6654079
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.9e-12
+Qubits: 73782
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 5607440
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 5.2e-12
+Qubits: 65088
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7113537
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 5.0e-12
+Qubits: 78198
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 6568640
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 5.0e-12
+Qubits: 59500
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6502831
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 5.4e-12
+Qubits: 72186
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5259534
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 1.6e-12
+Qubits: 63424
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6931679
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-12
+Qubits: 76322
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 5800481
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 1.3e-12
+Qubits: 67668
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7395508
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 1.3e-12
+Qubits: 80778
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 6785361
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 4.7e-12
+Qubits: 62144
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6791798
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 5.1e-12
+Qubits: 74830
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5452178
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.1e-12
+Qubits: 66108
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7225016
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.2e-12
+Qubits: 79006
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6004465
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 8.5e-13
+Qubits: 70392
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7693217
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 8.5e-13
+Qubits: 83502
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7014177
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 4.8e-12
+Qubits: 64932
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7096502
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 5.2e-12
+Qubits: 77618
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5655315
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 1.1e-12
+Qubits: 68936
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7534091
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.1e-12
+Qubits: 81834
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6219393
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 7.8e-13
+Qubits: 73260
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8006664
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 7.9e-13
+Qubits: 86370
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7255089
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 9.3e-12
+Qubits: 60840
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8113677
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 9.5e-12
+Qubits: 75446
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 6707698
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 5.7e-12
+Qubits: 64788
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8640171
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 5.4e-12
+Qubits: 79638
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7080385
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 5.7e-12
+Qubits: 69056
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9209353
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 5.4e-12
+Qubits: 84150
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7481532
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 6.1e-12
+Qubits: 63340
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8447080
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 6.6e-12
+Qubits: 77946
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 6929967
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 2.0e-12
+Qubits: 67328
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8978907
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 2.0e-12
+Qubits: 82178
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7306209
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 1.7e-12
+Qubits: 71636
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9553423
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 1.7e-12
+Qubits: 86730
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7710912
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 5.8e-12
+Qubits: 65984
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8799686
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 6.3e-12
+Qubits: 80590
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7165038
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.6e-12
+Qubits: 70012
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9336848
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-12
+Qubits: 84862
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7544836
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 1.2e-12
+Qubits: 74360
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9916697
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 1.2e-12
+Qubits: 89454
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7953095
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 6.0e-12
+Qubits: 68772
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9171497
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 6.4e-12
+Qubits: 83378
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7412912
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 1.5e-12
+Qubits: 72840
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9713992
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-12
+Qubits: 87690
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7796265
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 1.2e-12
+Qubits: 77228
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10299176
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 1.2e-12
+Qubits: 92322
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8208081
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 1.1e-11
+Qubits: 64680
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 10191903
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 1.1e-11
+Qubits: 81206
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 8530652
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 6.5e-12
+Qubits: 68692
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 10824072
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 6.2e-12
+Qubits: 85494
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 8981087
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 6.4e-12
+Qubits: 73024
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11506680
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 6.1e-12
+Qubits: 90102
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9465152
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 7.6e-12
+Qubits: 67180
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 10585839
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 8.2e-12
+Qubits: 83706
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 8793276
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 2.8e-12
+Qubits: 71232
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11224310
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 2.8e-12
+Qubits: 88034
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9247912
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 2.4e-12
+Qubits: 75604
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11913221
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 2.3e-12
+Qubits: 92682
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9736179
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 7.4e-12
+Qubits: 69824
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11002466
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 8.0e-12
+Qubits: 86350
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9071027
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 2.3e-12
+Qubits: 73916
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11647239
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 2.3e-12
+Qubits: 90718
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9529865
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 1.8e-12
+Qubits: 78328
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12342452
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 1.8e-12
+Qubits: 95406
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10022333
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 7.5e-12
+Qubits: 72612
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11441784
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 8.1e-12
+Qubits: 89138
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9363906
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 2.2e-12
+Qubits: 76744
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12092858
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 2.3e-12
+Qubits: 93546
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9826944
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 1.8e-12
+Qubits: 81196
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12794375
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=17, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 1.8e-12
+Qubits: 98274
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10323615
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 5.8e-12
+Qubits: 60592
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6623523
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 5.8e-12
+Qubits: 75074
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5471068
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.2e-12
+Qubits: 64492
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7049834
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.0e-12
+Qubits: 79194
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6018747
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.4e-12
+Qubits: 68712
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7511134
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.3e-12
+Qubits: 83634
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7025258
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.7e-12
+Qubits: 63092
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 6896807
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 2.9e-12
+Qubits: 77574
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5653257
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.6e-13
+Qubits: 67032
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7327490
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 6.4e-13
+Qubits: 81734
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6211787
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.2e-13
+Qubits: 71292
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7793163
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 6.0e-13
+Qubits: 86214
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7241978
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.3e-12
+Qubits: 65736
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7185832
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.6e-12
+Qubits: 80218
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5845941
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 2.1e-13
+Qubits: 69716
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7620887
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 2.1e-13
+Qubits: 84418
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6415771
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 1.2e-13
+Qubits: 74016
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8090932
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 1.2e-13
+Qubits: 88938
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7470794
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.4e-12
+Qubits: 68524
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7490598
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 83006
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6049118
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 1.5e-13
+Qubits: 72544
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7930025
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-13
+Qubits: 87246
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6630699
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 5.8e-14
+Qubits: 76884
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8404443
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 5.9e-14
+Qubits: 91806
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7711706
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 6.0e-12
+Qubits: 64816
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8644127
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 6.1e-12
+Qubits: 81410
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7238115
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.3e-12
+Qubits: 68780
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9172767
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.0e-12
+Qubits: 85626
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7612943
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.6e-12
+Qubits: 73064
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9744096
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.3e-12
+Qubits: 90162
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8016234
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.8e-12
+Qubits: 67316
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 8977538
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 3.1e-12
+Qubits: 83910
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7460389
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.7e-13
+Qubits: 71320
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9511511
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 6.5e-13
+Qubits: 88166
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7838773
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.3e-13
+Qubits: 75644
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10088174
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 6.0e-13
+Qubits: 92742
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8245619
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.5e-12
+Qubits: 69960
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9330153
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.8e-12
+Qubits: 86554
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7695466
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 2.1e-13
+Qubits: 74004
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9869460
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 2.1e-13
+Qubits: 90850
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8077405
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 1.2e-13
+Qubits: 78368
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10451457
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 1.2e-13
+Qubits: 95466
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8487808
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.5e-12
+Qubits: 72748
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9701973
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.9e-12
+Qubits: 89342
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7943346
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 1.5e-13
+Qubits: 76832
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10246613
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-13
+Qubits: 93678
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8328841
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 5.4e-14
+Qubits: 81236
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10833945
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 5.5e-14
+Qubits: 98334
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8742800
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 6.4e-12
+Qubits: 69040
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 10878943
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 6.4e-12
+Qubits: 87746
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9217689
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.5e-12
+Qubits: 73068
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11513633
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.2e-12
+Qubits: 92058
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9670645
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.7e-12
+Qubits: 77416
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12198763
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.4e-12
+Qubits: 96690
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10157232
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 3.0e-12
+Qubits: 71540
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11272880
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 3.4e-12
+Qubits: 90246
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9480314
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 7.2e-13
+Qubits: 75608
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11913871
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 6.9e-13
+Qubits: 94598
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9937471
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.6e-13
+Qubits: 79996
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12605304
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 6.2e-13
+Qubits: 99270
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10428259
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.7e-12
+Qubits: 74184
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11689508
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 3.1e-12
+Qubits: 92890
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 9758066
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 2.3e-13
+Qubits: 78292
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12336801
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 2.4e-13
+Qubits: 97282
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10219424
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 1.4e-13
+Qubits: 82720
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13034536
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 1.3e-13
+Qubits: 101994
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10714414
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.8e-12
+Qubits: 76972
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12128826
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 3.2e-12
+Qubits: 95678
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10050945
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 1.7e-13
+Qubits: 81120
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12782421
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.9e-13
+Qubits: 100110
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10516504
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 6.6e-14
+Qubits: 85588
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13486459
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=19, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 6.7e-14
+Qubits: 104862
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 11015696
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 5.6e-12
+Qubits: 64376
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7038642
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 5.6e-12
+Qubits: 80750
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 5885945
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.1e-12
+Qubits: 68292
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7466791
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 3.9e-12
+Qubits: 84894
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6451946
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.4e-12
+Qubits: 72528
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7929938
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.2e-12
+Qubits: 89358
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7506073
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.5e-12
+Qubits: 66876
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7311984
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 83250
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6068173
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.1e-13
+Qubits: 70832
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7744506
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 5.9e-13
+Qubits: 87434
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6644987
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 5.9e-13
+Qubits: 75108
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8212026
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 5.7e-13
+Qubits: 91938
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7722793
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.1e-12
+Qubits: 69520
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7601070
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.4e-12
+Qubits: 85894
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6260897
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.6e-13
+Qubits: 73516
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8037964
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-13
+Qubits: 90118
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6848971
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 9.4e-14
+Qubits: 77832
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8509857
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 9.2e-14
+Qubits: 94662
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 7951609
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.2e-12
+Qubits: 72308
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 7905900
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.5e-12
+Qubits: 88682
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6464118
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 9.9e-14
+Qubits: 76344
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8347167
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.1e-13
+Qubits: 92946
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 7063899
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 3.0e-14
+Qubits: 80700
+Code cycles: 109.3
+T-gates per distillation: 1
+Qubitcycles: 8823434
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 3.0e-14
+Qubits: 97530
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 8192521
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 5.7e-12
+Qubits: 68984
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9200226
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 5.8e-12
+Qubits: 87662
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 7794178
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.2e-12
+Qubits: 72964
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9731012
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.0e-12
+Qubits: 91902
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8171148
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.5e-12
+Qubits: 77264
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10304489
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.3e-12
+Qubits: 96462
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8576583
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.5e-12
+Qubits: 71484
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9533645
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 2.8e-12
+Qubits: 90162
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8016457
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.1e-13
+Qubits: 75504
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10069765
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 5.8e-13
+Qubits: 94442
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8396984
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.0e-13
+Qubits: 79844
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10648577
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 5.6e-13
+Qubits: 99042
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8805974
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.2e-12
+Qubits: 74128
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9886270
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.5e-12
+Qubits: 92806
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8251540
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.4e-13
+Qubits: 78188
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10427723
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.4e-13
+Qubits: 97126
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8635622
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 8.7e-14
+Qubits: 82568
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11011869
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 8.3e-14
+Qubits: 101766
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9048169
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.2e-12
+Qubits: 76916
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10258099
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.5e-12
+Qubits: 95594
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8499427
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 8.0e-14
+Qubits: 81016
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10804886
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 8.8e-14
+Qubits: 99954
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8887064
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 2.1e-14
+Qubits: 85436
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11394367
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 2.1e-14
+Qubits: 104634
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9303168
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 6.0e-12
+Qubits: 73592
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11596258
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 6.1e-12
+Qubits: 94574
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 9934999
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.4e-12
+Qubits: 77636
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12233469
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.1e-12
+Qubits: 98910
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10390476
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.7e-12
+Qubits: 82000
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12921122
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.4e-12
+Qubits: 103566
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10879585
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.7e-12
+Qubits: 76092
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 11990196
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 3.0e-12
+Qubits: 97074
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 10197624
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.3e-13
+Qubits: 80176
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12633709
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 6.0e-13
+Qubits: 101450
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10657302
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.2e-13
+Qubits: 84580
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13327665
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 5.8e-13
+Qubits: 106146
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 11150613
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.3e-12
+Qubits: 78736
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12406825
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 99718
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 10475377
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.4e-13
+Qubits: 82860
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13056640
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.5e-13
+Qubits: 104134
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 10939256
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 9.0e-14
+Qubits: 87304
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13756898
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 8.5e-14
+Qubits: 108870
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 11436769
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.4e-12
+Qubits: 81524
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12846144
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 102506
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 10768257
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 8.4e-14
+Qubits: 85688
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13502261
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 9.2e-14
+Qubits: 106962
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 11236337
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 2.1e-14
+Qubits: 90172
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 14208822
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=21, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 2.1e-14
+Qubits: 111738
+Code cycles: 105.0
+T-gates per distillation: 1
+Qubitcycles: 11738051
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 5.6e-12
+Qubits: 68352
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 7474977
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 5.6e-12
+Qubits: 86714
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6322031
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.1e-12
+Qubits: 72284
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 7904967
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 3.9e-12
+Qubits: 90882
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 6907035
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.4e-12
+Qubits: 76536
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8369964
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.2e-12
+Qubits: 95370
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 8011081
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.5e-12
+Qubits: 70852
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 7748377
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 89214
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6504298
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.0e-13
+Qubits: 74824
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8182742
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 5.9e-13
+Qubits: 93422
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 7100075
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 5.9e-13
+Qubits: 79116
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8652112
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 5.7e-13
+Qubits: 97950
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 8227801
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.1e-12
+Qubits: 73496
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8037526
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.4e-12
+Qubits: 91858
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6697064
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.5e-13
+Qubits: 77508
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8476263
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.6e-13
+Qubits: 96106
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 7304059
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 9.3e-14
+Qubits: 81840
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8950008
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 9.0e-14
+Qubits: 100674
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 8456617
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.2e-12
+Qubits: 76284
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8342422
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.5e-12
+Qubits: 94646
+Code cycles: 72.9
+T-gates per distillation: 1
+Qubitcycles: 6900328
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 9.6e-14
+Qubits: 80336
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 8785533
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 1.0e-13
+Qubits: 98934
+Code cycles: 76.0
+T-gates per distillation: 1
+Qubitcycles: 7518987
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 2.8e-14
+Qubits: 84708
+Code cycles: 109.4
+T-gates per distillation: 1
+Qubitcycles: 9263652
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=9, dm=9, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 2.9e-14
+Qubits: 103542
+Code cycles: 84.0
+T-gates per distillation: 1
+Qubitcycles: 8697529
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 5.7e-12
+Qubits: 73344
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 9781968
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 5.8e-12
+Qubits: 94202
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8375883
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.2e-12
+Qubits: 77340
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10314901
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.0e-12
+Qubits: 98466
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8754996
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.5e-12
+Qubits: 81656
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10890527
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.3e-12
+Qubits: 103050
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9162575
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.5e-12
+Qubits: 75844
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10115396
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 2.8e-12
+Qubits: 96702
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8598168
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.0e-13
+Qubits: 79880
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10653663
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 5.8e-13
+Qubits: 101006
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8980837
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.0e-13
+Qubits: 84236
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11234624
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 5.6e-13
+Qubits: 105630
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9391973
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.2e-12
+Qubits: 78488
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10468030
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.5e-12
+Qubits: 99346
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 8833257
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.3e-13
+Qubits: 82564
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11011631
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.4e-13
+Qubits: 103690
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9219482
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 8.5e-14
+Qubits: 86960
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11597926
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 8.1e-14
+Qubits: 108354
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9634174
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.2e-12
+Qubits: 81276
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 10839869
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.5e-12
+Qubits: 102134
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9081150
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 7.4e-14
+Qubits: 85392
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11388803
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 8.1e-14
+Qubits: 106518
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9470931
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 1.8e-14
+Qubits: 89828
+Code cycles: 133.4
+T-gates per distillation: 1
+Qubitcycles: 11980434
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=11, dm=11, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 1.8e-14
+Qubits: 111222
+Code cycles: 88.9
+T-gates per distillation: 1
+Qubitcycles: 9889179
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=4
+Output error: 6.0e-12
+Qubits: 78336
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12343834
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=29, dz2=17, dm2=17, nl1=6
+Output error: 6.0e-12
+Qubits: 101690
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 10682570
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=4
+Output error: 4.4e-12
+Qubits: 82396
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12983567
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=29, dz2=19, dm2=19, nl1=6
+Output error: 4.1e-12
+Qubits: 106050
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11140568
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=4
+Output error: 4.7e-12
+Qubits: 86776
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13673744
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=29, dz2=21, dm2=21, nl1=6
+Output error: 4.4e-12
+Qubits: 110730
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11632200
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=4
+Output error: 2.6e-12
+Qubits: 80836
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 12737773
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=31, dz2=17, dm2=17, nl1=6
+Output error: 3.0e-12
+Qubits: 104190
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 10945196
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=4
+Output error: 6.2e-13
+Qubits: 84936
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13383809
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=31, dz2=19, dm2=19, nl1=6
+Output error: 5.9e-13
+Qubits: 108590
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11407395
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=4
+Output error: 6.1e-13
+Qubits: 89356
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 14080288
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=31, dz2=21, dm2=21, nl1=6
+Output error: 5.7e-13
+Qubits: 113310
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11903229
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=4
+Output error: 2.3e-12
+Qubits: 83480
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13154404
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=33, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 106834
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11222950
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=4
+Output error: 1.4e-13
+Qubits: 87620
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13806741
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=33, dz2=19, dm2=19, nl1=6
+Output error: 1.4e-13
+Qubits: 111274
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11689350
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=4
+Output error: 8.7e-14
+Qubits: 92080
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 14509522
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=33, dz2=21, dm2=21, nl1=6
+Output error: 8.2e-14
+Qubits: 116034
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 12189385
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=4
+Output error: 2.3e-12
+Qubits: 86268
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 13593725
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=35, dz2=17, dm2=17, nl1=6
+Output error: 2.7e-12
+Qubits: 109622
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11515831
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=4
+Output error: 7.5e-14
+Qubits: 90448
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 14252363
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=35, dz2=19, dm2=19, nl1=6
+Output error: 8.3e-14
+Qubits: 114102
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 11986432
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=4
+Output error: 1.8e-14
+Qubits: 94948
+Code cycles: 157.6
+T-gates per distillation: 1
+Qubitcycles: 14961448
+        
+
+(15-to-1)x(8-to-CCZ) with pphys=0.001, dx=23, dz=13, dm=13, dx2=35, dz2=21, dm2=21, nl1=6
+Output error: 1.8e-14
+Qubits: 118902
+Code cycles: 105.1
+T-gates per distillation: 1
+Qubitcycles: 12490669
+        
