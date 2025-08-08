@@ -38,6 +38,8 @@ class ErrCorrCode(ABC):
                 return SurfaceCodeSmallProcs(params, *args, **kwargs)
             elif params.type == 'surface_small_procs_compact':
                 return SurfaceCodeSmallProcs_CompactLayout(params, *args, **kwargs)
+            elif params.type == 'surface_small_procs_compact_v2':
+                return SurfaceCodeSmallProcs_CompactLayout_V2(params, *args, **kwargs)
             elif params.type == 'surface_big_procs':
                 return SurfaceCodeBigProcs(params, *args, **kwargs)
             else:
@@ -540,8 +542,12 @@ class SurfaceCode(ErrCorrCode):
             factories = pickle.load(pkl_file)
         L2_total_CCZ = factories[d1]['Output error']
         time = factories[d1]['Codecycles'] * tc
+        dx2 = factories[d1]['dx2']
+        dz2 = factories[d1]['dz2']
+        dm2 = factories[d1]['dm2']
         self._factory = PhysicalCost(L2_total_CCZ, time)
-        self._factory_qubits = factories[d1]['Qubits']
+        # Ajoute un espace de routing supplémentaire pour l'injection de l'état CCZ
+        self._factory_qubits = factories[d1]['Qubits'] + 2*((d-dx2)*(3*dx2+dz2+dm2))+d+d/2
 
     @property
     def ccz_interact(self):
@@ -774,7 +780,9 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
 
     @staticmethod
     def _surf_topological_error_aux(p, p_bell, distance, nb_seam, ny, nb=1):
-        """Error probability due to decoherence during a CNOT in layout 2."""
+        """Error probability due to decoherence during a CNOT in layout 2.
+        this is the error model for the patch crossing all processors
+        in the compact layout."""
         alpha3 = 0.053
         alphac = 0.21
         alpha1 = 0.099
@@ -799,8 +807,9 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
         return 1 - (1 - errx - errz) ** nb
 
     @staticmethod
-    def _surf_topological_error_inner_aux(p, p_bell, distance, nb_seam, ny, nb=1):
-        """Error probability due to decoherence during a CNOT in layout 2."""
+    def _surf_topological_error_inner_aux(p, distance, ny, nb=1):
+        """Error probability due to decoherence during a CNOT in layout 2.
+        This is the error model for the merged patch inside a processor."""
         pbth = 7.43e-3
         # Length of the routing qubit spanning the entire processor
         length_aux = (ny + 1) * (distance + 1) / distance
@@ -820,6 +829,199 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
         """
         return 3 * self.cnot
 
+    @property
+    def ccz_interact_lattice_surgery(self):
+        """Interaction between the magic state and the target via lattice surgery.
+
+        I assume here that no parallelization is possible.
+        """
+        _, _, _, d, _, tc, tr, pp, pbell = self.params.low_level
+        log_qubits = logical_qubits(self.params, verb=False)
+        nb_link_between_procs = self.nb_procs - 1
+        ny = self.ny
+         # Compute error rates
+        # Error rate of a giant logical routing patch for an 
+        # auxiliary qubit in lattice surgery.
+        err_aux = self._surf_topological_error_aux(pp, pbell, d,
+                                                   nb_link_between_procs, ny, 1)
+        # Errors accumulate on unused qubits as well
+        err_internal = self._surf_topological_error_intern(pp, d, log_qubits)
+        interaction_error_model = (3*d * PhysicalCost(err_aux, tc)) | (
+            7 * d * PhysicalCost(err_internal, tc))
+        return interaction_error_model
+    
+    @property
+    def ccz_fixup(self):
+        """Characteristics of the 'fixup' step.
+
+        1.5 because there is always 50% probability that the correction is required.
+        """
+        _, _, _, d, _, tc, tr, pp, _ = self.params.low_level
+        return self.mesure + 1.5 * self.cnot
+
+    @property
+    def ccz_interact_fixup(self):
+        """Characteristics of the interaction step followed by 'fixup'."""
+        return self.ccz_interact + self.ccz_fixup
+
+    @property
+    def and_gate(self):
+        """Cost of computing an auxiliary AND qubit.
+
+        Warning: the preparation of the magic state can generally be parallelized.
+        """
+        return self._factory | self.ccz_interact_fixup
+
+    @property
+    def maj(self):
+        """Cost of the MAJ operation."""
+        nb_cnots = 2 if self.params.algo.parallel_cnots else 3
+        return (self._factory | ((nb_cnots * self.cnot) + self.ccz_interact + self.ccz_fixup))
+
+    @property
+    def uma_dag(self):
+        """Cost of the UMA operation with an auxiliary qubit."""
+        return (self._factory | (3 * self.cnot + self.ccz_fixup + self.ccz_interact))
+
+    @property
+    def semi_classical_maj(self):
+        """Cost of the semi-classical MAJ operation."""
+        return (self._factory | (0.5 * self.cnot + self.gate1 + self.ccz_fixup + self.ccz_interact))
+
+    @property
+    def semi_classical_ctrl_maj(self):
+        """Cost of the controlled semi-classical MAJ operation."""
+        return (self._factory | (1.5 * self.cnot + self.ccz_fixup + self.ccz_interact))
+
+
+class SurfaceCodeSmallProcs_CompactLayout_V2(SurfaceCode):
+    """Surface code, with a set of small processors.
+
+    Uses Litinski factories and the new layout with qubits on the sides.
+    Here we use two distillation factories to allow parallel preparation.
+    New Toffoli injection via lattice surgery.
+    With 4 d time steps for the CNOT.
+    """
+
+    def __init__(self, params: Params):
+        """Create the instance of the surface code."""
+        # We don't call SurfaceCode.__init__() but from its parent.
+        super(__class__.__bases__[0], self).__init__(params)
+        # See Gidney2019Lowoverheadquantum for the time of a CNOT.
+        _, _, _, d, _, tc, tr, pp, pbell = self.params.low_level
+        if not d % 2 == 1:
+            raise ValueError("The distance must be odd.")
+        self._init_ccz_factory()
+        log_qubits = logical_qubits(params, verb=False)
+
+        # Determine the layout size and the number of logical qubits per processor
+        ny, nb_log_qbit_per_proc = find_size_layout_v2(
+            self._factory_qubits, lambda ny: proc_qubits_each_v2(ny, d)
+        )
+
+        # Calculate the number of processors and the required qubits
+        self.nb_procs = ceil(log_qubits / nb_log_qbit_per_proc) + 2
+        self.proc_qubits_each = proc_qubits_each_v2(ny, d)
+        self.proc_qubits = (self.proc_qubits_each * (self.nb_procs - 2)
+                            + 2 * self._factory_qubits)
+        self.memory_qubits = None
+        self.space_modes = None
+        self.time_modes = None
+        self.ny = ny
+
+        # Errors also accumulate on unused qubits
+        # Error rate of a giant logical routing patch for an auxiliary qubit in lattice surgery.
+        # nb_seam = nb_procs - 1
+        nb_link_between_procs = ceil(log_qubits / nb_log_qbit_per_proc) - 1
+
+        # Compute error rates
+        err_aux = self._surf_topological_error_aux(pp, pbell, d,
+                                                   nb_link_between_procs, ny, 1)
+        err_internal = self._surf_topological_error_intern(pp, d, log_qubits)
+        err_internal_aux = self._surf_topological_error_inner_aux(pp, d, ny, 1)
+
+        # Repetition `d` times
+        self.correct_time = d * tc
+
+        self.gate1 = PhysicalCost(0, 0)  # OK if Clifford or H at the beginning or end.
+
+        # Same for CZ
+        self.cnot = (d * PhysicalCost(err_aux, tc)) | (4 * d * PhysicalCost(err_internal, tc)) | (
+            d * PhysicalCost(err_internal_aux, tc)
+        )
+
+        # We only initialize logical qubits of size d² internal to a processor outside the context
+        # of lattice surgery which intervenes for the CNOT
+        self.init = d * PhysicalCost(err_internal, tc)
+
+        # We only measure logical qubits of size d² internal to a processor outside the context
+        # of lattice surgery which intervenes for the CNOT
+        self.mesure = tr / tc * PhysicalCost(err_internal, tc)
+
+    @staticmethod
+    def _surf_topological_error_aux(p, p_bell, distance, nb_seam, ny, nb=1):
+        """Error probability due to decoherence during a CNOT in layout 2.
+        this is the error model for the patch crossing all processors
+        in the compact layout."""
+        alpha3 = 0.053
+        alphac = 0.21
+        alpha1 = 0.099
+        alpha2 = 0.045
+        pbth = 7.2e-3
+        psth = 0.298
+        alpha1_tot = alpha1 * nb_seam
+        alpha3_tot = alpha3 * nb_seam
+
+        # Length of the routing qubit crossing all processors in units of d
+        length_aux = (2 * distance + 2) / distance * (nb_seam + 1) + ny * (distance + 1) / distance
+        alpha2_tot = alpha2 * length_aux
+
+        # Errors for X_L
+        errx = coupled_error_model_v2(p_bell, p, alpha1_tot, alpha2_tot,
+                                      alpha3_tot, psth, pbth, alphac, distance)
+
+        # Errors for Z_L
+        distance_z = distance
+        pbth_reg = 7.43e-3
+        errz = 0.05 * (p / pbth_reg) ** ((distance_z + 1) / 2)
+        return 1 - (1 - errx - errz) ** nb
+
+    @staticmethod
+    def _surf_topological_error_inner_aux(p, distance, ny, nb=1):
+        """Error probability due to decoherence during a CNOT in layout 2.
+        This is the error model for the merged patch inside a processor."""
+        pbth = 7.43e-3
+        # Length of the routing qubit spanning the entire processor
+        length_aux = (ny + 1) * (distance + 1) / distance
+
+        # Errors for X_L
+        errx = 0.05 * (p / pbth) ** ((distance + 1) / 2)
+
+        # Errors for Z_L
+        errz = 0.05 * length_aux * (p / pbth) ** ((distance + 1) / 2)
+        return 1 - (1 - errx - errz) ** nb
+
+    @property
+    def ccz_interact(self):
+        """Interaction between the magic state and the target via lattice surgery.
+
+        I assume here that no parallelization is possible.
+        """
+        _, _, _, d, _, tc, tr, pp, pbell = self.params.low_level
+        log_qubits = logical_qubits(self.params, verb=False)
+        nb_link_between_procs = self.nb_procs - 1
+        ny = self.ny
+         # Compute error rates
+        # Error rate of a giant logical routing patch for an 
+        # auxiliary qubit in lattice surgery.
+        err_aux = self._surf_topological_error_aux(pp, pbell, d,
+                                                   nb_link_between_procs, ny, 1)
+        # Errors accumulate on unused qubits as well
+        err_internal = self._surf_topological_error_intern(pp, d, log_qubits)
+        interaction_error_model = (3*d * PhysicalCost(err_aux, tc)) | (
+            7 * d * PhysicalCost(err_internal, tc))
+        return interaction_error_model
+    
     @property
     def ccz_fixup(self):
         """Characteristics of the 'fixup' step.
@@ -902,25 +1104,43 @@ class SurfaceCodeBigProcs(SurfaceCode):
             (3 * d + 2) * (d + 1)) - 2)
         ny = nb_log_qbit_per_proc / 2
         self.nb_procs = 1
-        self.proc_qubits_each = proc_qubits_monolythic(ny, d)
-        self.proc_qubits = self.proc_qubits_each + 2 * self._factory_qubits
+        self.proc_qubits_each = proc_qubits_monolythic(log_qubits/2, d)+ 2 * self._factory_qubits
+        self.proc_qubits = self.proc_qubits_each 
         self.memory_qubits = None
         self.space_modes = None
         self.time_modes = None
         self.ny = ny
 
+    # @property
+    # def ccz_interact(self):
+    #     """Interaction between the magic state and the target.
+
+    #     I assume here that no parallelization is possible.
+    #     """
+    #     # Note: I do not take into account decoherence of the fixup qubits
+    #     # while applying the CNOTs.
+    #     # The fact that we use CCZ states to make Toffolis does not modify
+    #     # this step because it adds a Hadamard that can be done in parallel with
+    #     # the first two CNOTs.
+    #     return 3 * self.cnot
+        
     @property
     def ccz_interact(self):
-        """Interaction between the magic state and the target.
+        """Interaction between the magic state and the target via lattice surgery.
 
         I assume here that no parallelization is possible.
         """
-        # Note: I do not take into account decoherence of the fixup qubits
-        # while applying the CNOTs.
-        # The fact that we use CCZ states to make Toffolis does not modify
-        # this step because it adds a Hadamard that can be done in parallel with
-        # the first two CNOTs.
-        return 3 * self.cnot
+        _, _, _, d, _, tc, _, pp, _ = self.params.low_level
+        log_qubits = logical_qubits(self.params, verb=False)
+         # Compute error rates
+        # Error rate of a giant logical routing patch for an 
+        # auxiliary qubit in lattice surgery that crosses the big processor.
+        err_aux = (log_qubits/2*(d+1)/d)*self._surf_topological_error_intern(pp, d, 1)
+        # Errors accumulate on unused qubits as well
+        err_internal = self._surf_topological_error_intern(pp, d, log_qubits)
+        interaction_error_model = (3*d * PhysicalCost(err_aux, tc)) | (
+            7 * d * PhysicalCost(err_internal, tc))
+        return interaction_error_model
 
     @property
     def ccz_fixup(self):
@@ -987,6 +1207,7 @@ CLASS_MAP = {'surface': SurfaceCode,
              'surface_free_CCZ': SurfaceCodeFreeCCZ,
              'surface_small_procs': SurfaceCodeSmallProcs,
              'surface_small_procs_compact': SurfaceCodeSmallProcs_CompactLayout,
+             'surface_small_procs_compact_v2': SurfaceCodeSmallProcs_CompactLayout_V2,
              'surface_big_procs': SurfaceCodeBigProcs
              }
 
@@ -1033,7 +1254,7 @@ def logical_error_model(x, pth, alpha, d):
 
 
 def decoupled_error_model(ps, pb, psth, pbth, alpha1, alpha2, d):
-    """Logical error model with a seam according to vuletic article.
+    """Logical error model with a seam for a naive ansatz.
 
     when we don't consider errors leaving the seam and coming back.
     """
@@ -1046,7 +1267,7 @@ def coupled_error_threshold_v2(pb, psth, pbth, alphac):
 
 
 def coupled_error_model_v2(ps, pb, alpha1, alpha2, alpha3, psth, pbth, alphac, d):
-    """Complete Vuletic formula with modification due to rotated lattice."""
+    """Complete formula with modification due to rotated lattice."""
     coupling_term = sum(((ps/coupled_error_threshold_v2(pb, psth, pbth, alphac))
                         ** (i/2)*(pb/pbth)**((d+1-i)/2) for i in range(1, d+1)))
     return (decoupled_error_model(ps, pb, psth, pbth, alpha1, alpha2, d) +
@@ -1063,7 +1284,8 @@ def proc_qubits_each(nx, ny, d):
 
 
 def proc_qubits_each_v2(ny, d):
-    """Give the total number of physical qubit per proc in small proc setting for compact layout."""
+    """Give the total number of physical qubit per proc in small proc setting 
+    for compact layout."""
     return (2*((3*d+2)*((d+1)*ny-1)+(2*d+1)*(d+1)+d) - 1 + 2*d)
 
 

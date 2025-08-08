@@ -1,0 +1,592 @@
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.001)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.008423925477266225, t=20 days, 6:05:49.866509, exp_t=20 days, 10:13:36.549604), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.001595959595959596)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.008787854745516577, t=20 days, 6:05:49.866509, exp_t=20 days, 10:24:24.512200), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.002191919191919192)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.009078941951120356, t=20 days, 6:05:49.866509, exp_t=20 days, 10:33:03.124785), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.002787878787878788)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.009406287911175593, t=20 days, 6:05:49.866509, exp_t=20 days, 10:42:46.701517), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.003383838383838384)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.009733525678963795, t=20 days, 6:05:49.866509, exp_t=20 days, 10:52:30.470997), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.00397979797979798)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.010060655400892182, t=20 days, 6:05:49.866509, exp_t=20 days, 11:02:14.433484), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.004575757575757576)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.010387677057320022, t=20 days, 6:05:49.866509, exp_t=20 days, 11:11:58.588945), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.005171717171717172)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.010714590683945868, t=20 days, 6:05:49.866509, exp_t=20 days, 11:21:42.937443), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.005767676767676768)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.011095853418345736, t=20 days, 6:05:49.866509, exp_t=20 days, 11:33:04.921408), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.006363636363636364)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.011476969230617806, t=20 days, 6:05:49.866509, exp_t=20 days, 11:44:27.168329), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.00695959595959596)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.011857938164164916, t=20 days, 6:05:49.866509, exp_t=20 days, 11:55:49.678286), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.007555555555555556)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.012293324334196498, t=20 days, 6:05:49.866509, exp_t=20 days, 12:08:50.321990), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.008151515151515153)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.012746489706615405, t=20 days, 6:05:49.866509, exp_t=20 days, 12:22:23.574941), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.008747474747474747)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.013235478180745663, t=20 days, 6:05:49.866509, exp_t=20 days, 12:37:01.954087), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.009343434343434345)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.01376058153694304, t=20 days, 6:05:49.866509, exp_t=20 days, 12:52:46.176963), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.009939393939393939)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.014321635655982656, t=20 days, 6:05:49.866509, exp_t=20 days, 13:09:36.156981), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.010535353535353537)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.01495465328454293, t=20 days, 6:05:49.866509, exp_t=20 days, 13:28:37.063243), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.01113131313131313)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.01562344661452486, t=20 days, 6:05:49.866509, exp_t=20 days, 13:48:44.043193), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.011727272727272729)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.016363965137810688, t=20 days, 6:05:49.866509, exp_t=20 days, 14:11:02.381294), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.012323232323232323)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.017176284351173354, t=20 days, 6:05:49.866509, exp_t=20 days, 14:35:32.804251), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.01291919191919192)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.01809573523723418, t=20 days, 6:05:49.866509, exp_t=20 days, 15:03:20.087431), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.013515151515151515)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.01908654308326352, t=20 days, 6:05:49.866509, exp_t=20 days, 15:33:20.264416), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.014111111111111112)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.020220214737949993, t=20 days, 6:05:49.866509, exp_t=20 days, 16:07:44.473703), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.014707070707070707)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.021514235373415347, t=20 days, 6:05:49.866509, exp_t=20 days, 16:47:06.495072), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.015303030303030304)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.023021937174237728, t=20 days, 6:05:49.866509, exp_t=20 days, 17:33:06.448391), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.0158989898989899)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.02470603303737806, t=20 days, 6:05:49.866509, exp_t=20 days, 18:24:39.392457), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.016494949494949496)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.026726846049110353, t=20 days, 6:05:49.866509, exp_t=20 days, 19:26:44.865751), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.017090909090909094)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.0290467130737867, t=20 days, 6:05:49.866509, exp_t=20 days, 20:38:20.780142), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.01768686868686869)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.03187616946203797, t=20 days, 6:05:49.866509, exp_t=20 days, 22:06:08.217318), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.018282828282828283)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.035228962656045026, t=20 days, 6:05:49.866509, exp_t=20 days, 23:50:49.917516), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.01887878787878788)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.03932871183411801, t=20 days, 6:05:49.866509, exp_t=21 days, 1:59:50.681501), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.019474747474747478)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.0443938003702431, t=20 days, 6:05:49.866509, exp_t=21 days, 4:40:45.828236), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.020070707070707072)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.05070506921990736, t=20 days, 6:05:49.866509, exp_t=21 days, 8:03:40.637536), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.020666666666666667)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.05866946411369278, t=20 days, 6:05:49.866509, exp_t=21 days, 12:23:37.422462), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.021262626262626264)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.06875761586482476, t=20 days, 6:05:49.866509, exp_t=21 days, 17:59:16.164196), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.021858585858585862)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.08160789809386582, t=20 days, 6:05:49.866509, exp_t=22 days, 1:17:29.603581), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.022454545454545456)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.09812966938942247, t=20 days, 6:05:49.866509, exp_t=22 days, 10:59:16.398379), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.02305050505050505)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.120045990184111, t=20 days, 5:41:15.017838, exp_t=22 days, 23:56:47.273487), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.023646464646464648)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.14721457090613643, t=20 days, 5:41:15.017838, exp_t=23 days, 17:31:50.615293), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=35, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.024242424242424246)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.18183909298985934, t=20 days, 5:41:15.017838, exp_t=24 days, 17:37:59.641495), ; ,  34018414.0
+Number of processors: (378, 1)
+Layout parameters: nx=None, ny=11
+Number of qubits per proc: 89781
+Total number of physical qubits: 34018414.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.02483838383838384)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.04575006081039468, t=21 days, 8:46:38.877932, exp_t=22 days, 9:21:42.484224), ; ,  38053573.0
+Number of processors: (415, 1)
+Layout parameters: nx=None, ny=10
+Number of qubits per proc: 91501
+Total number of physical qubits: 38053573.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.025434343434343434)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.05899642601793609, t=21 days, 8:46:38.877932, exp_t=22 days, 16:55:34.183560), ; ,  38053573.0
+Number of processors: (415, 1)
+Layout parameters: nx=None, ny=10
+Number of qubits per proc: 91501
+Total number of physical qubits: 38053573.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.026030303030303032)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.07670725790604604, t=21 days, 8:46:38.877932, exp_t=23 days, 3:22:44.658435), ; ,  38053573.0
+Number of processors: (415, 1)
+Layout parameters: nx=None, ny=10
+Number of qubits per proc: 91501
+Total number of physical qubits: 38053573.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.02662626262626263)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.10021100377626124, t=21 days, 8:46:38.877932, exp_t=23 days, 17:53:10.857056), ; ,  38053573.0
+Number of processors: (415, 1)
+Layout parameters: nx=None, ny=10
+Number of qubits per proc: 91501
+Total number of physical qubits: 38053573.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.027222222222222224)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.13117208539915937, t=21 days, 8:46:38.877932, exp_t=24 days, 14:11:40.239150), ; ,  38053573.0
+Number of processors: (415, 1)
+Layout parameters: nx=None, ny=10
+Number of qubits per proc: 91501
+Total number of physical qubits: 38053573.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=37, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.02781818181818182)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.17142897886058506, t=21 days, 8:46:38.877932, exp_t=25 days, 18:52:10.775800), ; ,  38053573.0
+Number of processors: (415, 1)
+Layout parameters: nx=None, ny=10
+Number of qubits per proc: 91501
+Total number of physical qubits: 38053573.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.028414141414141416)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.050609421635536944, t=22 days, 11:52:02.738027, exp_t=23 days, 16:38:46.632934), ; ,  42455161.0
+Number of processors: (461, 1)
+Layout parameters: nx=None, ny=9
+Number of qubits per proc: 91917
+Total number of physical qubits: 42455161.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.029010101010101014)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.0681781921944099, t=22 days, 11:52:02.738027, exp_t=24 days, 3:22:03.602674), ; ,  42455161.0
+Number of processors: (461, 1)
+Layout parameters: nx=None, ny=9
+Number of qubits per proc: 91917
+Total number of physical qubits: 42455161.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.029606060606060608)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.09179169304476398, t=22 days, 11:52:02.738027, exp_t=24 days, 18:25:52.611249), ; ,  42455161.0
+Number of processors: (461, 1)
+Layout parameters: nx=None, ny=9
+Number of qubits per proc: 91917
+Total number of physical qubits: 42455161.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.030202020202020202)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.12319656173574689, t=22 days, 11:52:02.738027, exp_t=25 days, 15:43:20.270038), ; ,  42455161.0
+Number of processors: (461, 1)
+Layout parameters: nx=None, ny=9
+Number of qubits per proc: 91917
+Total number of physical qubits: 42455161.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=39, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.0307979797979798)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.16434406328793882, t=22 days, 11:52:02.738027, exp_t=26 days, 22:02:25.145393), ; ,  42455161.0
+Number of processors: (461, 1)
+Layout parameters: nx=None, ny=9
+Number of qubits per proc: 91917
+Total number of physical qubits: 42455161.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.0313939393939394)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.053615031851409034, t=23 days, 15:26:09.078733, exp_t=24 days, 23:34:56.962108), ; ,  47243481.0
+Number of processors: (519, 1)
+Layout parameters: nx=None, ny=8
+Number of qubits per proc: 90885
+Total number of physical qubits: 47243481.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03198989898989899)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.07340874450214996, t=23 days, 15:26:09.078733, exp_t=25 days, 12:23:26.471961), ; ,  47243481.0
+Number of processors: (519, 1)
+Layout parameters: nx=None, ny=8
+Number of qubits per proc: 90885
+Total number of physical qubits: 47243481.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.032585858585858586)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.09999645632891363, t=23 days, 15:26:09.078733, exp_t=26 days, 6:28:54.483934), ; ,  47243481.0
+Number of processors: (519, 1)
+Layout parameters: nx=None, ny=8
+Number of qubits per proc: 90885
+Total number of physical qubits: 47243481.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=41, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03318181818181819)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.13593006875870117, t=23 days, 14:57:26.598121, exp_t=27 days, 8:08:51.263136), ; ,  47243481.0
+Number of processors: (519, 1)
+Layout parameters: nx=None, ny=8
+Number of qubits per proc: 90885
+Total number of physical qubits: 47243481.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03377777777777778)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.048047749485395475, t=24 days, 18:32:55.482808, exp_t=26 days, 0:33:26.347746), ; ,  52407905.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 88261
+Total number of physical qubits: 52407905.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.034373737373737376)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.06607933287027634, t=24 days, 18:32:55.482808, exp_t=26 days, 12:36:57.236882), ; ,  52407905.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 88261
+Total number of physical qubits: 52407905.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03496969696969697)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.09039822509280038, t=24 days, 18:32:55.482808, exp_t=27 days, 5:38:10.706124), ; ,  52407905.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 88261
+Total number of physical qubits: 52407905.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=43, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.035565656565656564)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.12345772634257524, t=24 days, 18:02:50.458215, exp_t=28 days, 5:43:00.170888), ; ,  52407905.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 88261
+Total number of physical qubits: 52407905.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.036161616161616165)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.040733327832461974, t=25 days, 21:39:41.886883, exp_t=27 days, 0:03:33.281725), ; ,  57307847.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 96505
+Total number of physical qubits: 57307847.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03675757575757576)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.05611617237706912, t=25 days, 21:39:41.886883, exp_t=27 days, 10:37:15.313233), ; ,  57307847.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 96505
+Total number of physical qubits: 57307847.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.037353535353535354)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.07688994818837347, t=25 days, 21:39:41.886883, exp_t=28 days, 1:26:33.367282), ; ,  57307847.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 96505
+Total number of physical qubits: 57307847.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=29, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.037949494949494955)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.10471770427904692, t=25 days, 21:39:41.886883, exp_t=28 days, 22:22:29.964430), ; ,  57307847.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 96505
+Total number of physical qubits: 57307847.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=0, d2=None, d=45, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03854545454545455)))
+factory_cost=PhysicalCost(p=2.1e-14, t=0:00:00.000133, exp_t=0:00:00.000133)
+Best case: PhysicalCost(p=0.14208026833717147, t=25 days, 21:08:14.318309, exp_t=30 days, 4:00:14.371627), ; ,  57307847.0
+Number of processors: (593, 1)
+Layout parameters: nx=None, ny=7
+Number of qubits per proc: 96505
+Total number of physical qubits: 57307847.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.039141414141414144)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.059491610356650626, t=27 days, 0:13:38.178403, exp_t=28 days, 17:13:50.581354), ; ,  63218103.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 91389
+Total number of physical qubits: 63218103.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.03973737373737374)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.08108265324490294, t=27 days, 0:13:38.178403, exp_t=29 days, 9:25:30.009574), ; ,  63218103.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 91389
+Total number of physical qubits: 63218103.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04033333333333333)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.10984002836249818, t=27 days, 0:13:38.178403, exp_t=30 days, 8:12:51.686840), ; ,  63218103.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 91389
+Total number of physical qubits: 63218103.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=47, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04092929292929293)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.14766341557365648, t=27 days, 0:13:38.178403, exp_t=31 days, 16:31:46.856331), ; ,  63218103.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 91389
+Total number of physical qubits: 63218103.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04152525252525253)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.05639668998206815, t=28 days, 3:19:02.038497, exp_t=29 days, 19:40:45.008921), ; ,  68615709.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 99197
+Total number of physical qubits: 68615709.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04212121212121212)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.0767673574130543, t=28 days, 3:19:02.038497, exp_t=30 days, 11:28:12.982021), ; ,  68615709.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 99197
+Total number of physical qubits: 68615709.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04271717171717172)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.10390598415619834, t=28 days, 3:19:02.038497, exp_t=31 days, 9:37:23.492660), ; ,  68615709.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 99197
+Total number of physical qubits: 68615709.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04331313131313132)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.139597852311256, t=28 days, 3:19:02.038497, exp_t=32 days, 16:53:08.063707), ; ,  68615709.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 99197
+Total number of physical qubits: 68615709.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=1, d2=None, d=49, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.04390909090909091)))
+factory_cost=PhysicalCost(p=3e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.1858081204622929, t=28 days, 3:19:02.038497, exp_t=34 days, 13:25:57.118459), ; ,  68615709.0
+Number of processors: (691, 1)
+Layout parameters: nx=None, ny=6
+Number of qubits per proc: 99197
+Total number of physical qubits: 68615709.0
+
+ Params=Params(type='surface_small_procs_compact_v2', algo=AlgoOpts(prob='rsa', algo='Ekera', s=1, n=2048, we=5, wm=5, c=28, windowed=True, mesure_based_deand=None, mesure_based_unlookup=True, parallel_cnots=True), low_level=LowLevelOpts(debitage=2, d1=2, d2=None, d=51, n=None, tc=1e-06, tr=1e-05, pp=0.001, pbell=np.float64(0.044505050505050506)))
+factory_cost=PhysicalCost(p=9.9e-14, t=0:00:00.000109, exp_t=0:00:00.000109)
+Best case: PhysicalCost(p=0.0902170579995476, t=29 days, 6:24:25.898591, exp_t=32 days, 4:03:36.695845), ; ,  75679733.0
+Number of processors: (829, 1)
+Layout parameters: nx=None, ny=5
+Number of qubits per proc: 91205
+Total number of physical qubits: 75679733.0

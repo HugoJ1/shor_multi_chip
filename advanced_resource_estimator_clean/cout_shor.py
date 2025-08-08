@@ -23,7 +23,6 @@ from tools import AlgoOpts, LowLevelOpts, Params, PhysicalCost
 from error_correction import ErrCorrCode, logical_qubits
 import error_correction
 import re
-
 try:
     if not __IPYTHON__:
         raise NameError("Artifice")
@@ -68,6 +67,13 @@ DEF_RANGES = {'surface': dict(d1s=range(3, 30, 2),
                                                   wes=range(2, 30),
                                                   wms=range(2, 10),
                                                   cs=range(1, 40)),
+              'surface_small_procs_compact_v2': dict(d1s=range(0, 8),
+                                                        d2s=(None,),
+                                                        ds=range(27, 55, 2),
+                                                        ns=(None,),
+                                                        wes=range(2, 30),
+                                                        wms=range(2, 10),
+                                                        cs=range(1, 40)),
               # Hardcoded version of one proc with the same parameters as optimal for small proc
               'surface_big_procs': dict(d1s=range(0, 2),
                                         d2s=(None,),
@@ -224,7 +230,7 @@ def full_data_string(best_params, best_err_corr, best_cost, best_qubits):
     string += f'factory_cost={ErrCorrCode(best_params)._factory}\n'
     string += f'Best case: {best_cost}, ; ,  {best_qubits}\n'
     if hasattr(best_err_corr, 'nb_procs'):
-        string += f'Number of processors: {best_err_corr.nb_procs-1, + 1}\n'
+        string += f'Number of processors: {best_err_corr.nb_procs-2, + 2}\n'
         string += f'Layout parameters: nx={best_err_corr.nx}, ny={best_err_corr.ny}\n'
         string += f'Number of qubits per proc: {best_err_corr.proc_qubits_each}\n'
         string += f'Total number of physical qubits: {best_err_corr.proc_qubits}\n'
@@ -237,9 +243,12 @@ def from_fulltxt_to_partialtxt(input_file, output_file):
     For the plot_overhead_comparison function.
     """
     # Regular expressions to match the required values
-    pbell_pattern = re.compile(r"pbell=([\d.]+)")
-    exp_t_pattern = re.compile(r"Meilleur cas : .*exp_t=(\d+) days, (\d+):(\d+):([\d.]+)")
-    qubits_pattern = re.compile(r"Nombre de qubit physique total :,([\d]+)")
+    #pbell_pattern = re.compile(r"pbell=([\d.]+)")
+    pbell_pattern = re.compile(r"pbell=np\.float64\(([\d\.]+)\)")
+    #exp_t_pattern = re.compile(r"Meilleur cas : .*exp_t=(\d+) days, (\d+):(\d+):([\d.]+)")
+    exp_t_pattern = re.compile(r"Best case: .*exp_t=(\d+) days, (\d+):(\d+):([\d.]+)")
+    #qubits_pattern = re.compile(r"Nombre de qubit physique total :,([\d]+)")
+    qubits_pattern = re.compile(r"Total number of physical qubits: ([\d]+)")
 
     # Lists to hold the extracted data
     results = []
@@ -254,9 +263,6 @@ def from_fulltxt_to_partialtxt(input_file, output_file):
                 exp_t_match = exp_t_pattern.search(block_text)
                 qubits_match = qubits_pattern.search(block_text)
                 # If all three matches are found, add them to the results
-                print(pbell_match)
-                print(exp_t_match)
-                print(qubits_match)
                 if pbell_match and exp_t_match and qubits_match:
                     pbell = pbell_match.group(1)
                     qubits = qubits_match.group(1)
@@ -301,6 +307,7 @@ def from_fulltxt_to_partialtxt(input_file, output_file):
 
 def plot_resource_comparison(base_params: Params, pbell_list, t_scale='days', biais=1,
                              files="data_simu/données_complètes_layout_opt_2_h_2_new_params_19_04_sampling_v15.txt",
+                             file_out = "resource_estimation.pdf",
                              pbell_max=1., type='partial'):
     """Build curve with space and time cost of running RSA w.r.t pbell.
 
@@ -390,22 +397,25 @@ def plot_resource_comparison(base_params: Params, pbell_list, t_scale='days', bi
     ax1.set_ylim(bottom=2e7)
     ax1.tick_params(axis='y', labelcolor='g')
     ax1.grid(True, which='major', linestyle="-", linewidth=0.5, alpha=0.5)
-    ax2.set_yticks(np.arange(18, 75, 3))  # Adjust step size as needed
+    ax2.set_yticks(np.arange(20, 45, 3))  # Adjust step size as needed
     ax2.yaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))  # Force integer display
     ax1.tick_params(axis='both', which='both', labelsize=14)
     ax2.tick_params(axis='both', which='both', labelsize=14)
-    plt.show()
+    plt.savefig(file_out)
+    plt.close()
 
 
 def plot_Bell_pair_generation_rate(base_params: Params, pbell_list, t_scale='days', biais=1,
                                    files="data_simu/données_complètes_layout_opt_2_h_2_new_params_19_04_sampling_v15.txt",
+                                   file_out = "generation_rate.pdf",
                                    pbell_max=1., type='partial'):
     """Build curve with generation rate of Bell pair w.r.t pbell from a simulation file."""
     file_path = files
     # Regex patterns to extract values
-    pbell_pattern = re.compile(r"pbell=([\d\.e-]+)")
+    #pbell_pattern = re.compile(r"pbell=([\d\.e-]+)")
+    pbell_pattern = re.compile(r"pbell=np\.float64\(([\d\.]+)\)")
     d_pattern = re.compile(r"d=(\d+)")
-    processors_pattern = re.compile(r"Number of processors :, \((\d+),")
+    processors_pattern = re.compile(r"Number of processors: \((\d+),")
     # Lists to store extracted values
     pbell_values = []
     d_values = []
@@ -458,11 +468,13 @@ def plot_Bell_pair_generation_rate(base_params: Params, pbell_list, t_scale='day
         ax1.tick_params(axis='y', labelcolor='g')
         ax1.set_yscale('log')
         ax1.grid(True, which='major', linestyle="-", linewidth=0.5, alpha=0.5)
-        plt.show()
+        plt.savefig(file_out)
+        plt.close()
 
 
 def plot_overhead_comparison(base_params: Params, pbell_list, t_scale='days', biais=1,
                              files="data_simu/données_complètes_layout_opt_2_h_2_new_params_19_04_sampling_v15.txt",
+                             file_out = "overhead_comparison.pdf",
                              pbell_max=1., type='partial'):
     """Build curve with space and time % overhead compared to monolithic approach of the same parameters.
 
@@ -559,36 +571,41 @@ def plot_overhead_comparison(base_params: Params, pbell_list, t_scale='days', bi
     # plt.yaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))  # Force integer display
     plt.tick_params(axis='both', which='both', labelsize=14)
     plt.legend(fontsize=15)
-    plt.show()
+    plt.savefig(file_out)
+    plt.close()
 
 
 # %% Executable Part
 if __name__ == '__main__':
 
-    params = Params('surface_small_procs_compact',
+    params = Params('surface_small_procs_compact_v2',
                     AlgoOpts(n=2048, windowed=True, parallel_cnots=True),
-                    LowLevelOpts(tr=10e-6, pbell=4e-2))
-    # pbell_list = np.geomspace(0.1e-2, 6e-2, num=60)
+                    LowLevelOpts(tr=10e-6, pbell=0.025))
+    # the list of values of p_bell to test
     pbell_list = np.linspace(0.1e-2, 6e-2, num=100)
 
     # Plot the resource needed to factorize a 2048 RSA bit integer with different
     # p_bell while p is fixed to 0.1%
     plot_resource_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
-                             files="data_simu/données_complètes_layout_opt_2_h_2_new_params_19_04_sampling_v15.txt",
+                             files="data_simu/full_data_v2.txt",
                              pbell_max=0.045, type='full')
 
     # Plot the overhead with respect to the monolithic approach to factorize a 2048 RSA bit integer with different
     # p_bell and p while fixed to 0.1%
     plot_overhead_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
-                             files="data_simu/données_complètes_layout_opt_2_h_2_new_params_19_04_sampling_v15.txt",
-                             pbell_max=0.045, type='full')
+                             files="data_simu/full_data_v2.txt",
+                            pbell_max=0.045, type='full')
 
     # Plot the Bell pair generation rate needed (worst case) to factorize a 2048 RSA bit integer
     # with different p_bell while p is fixed to 0.1%
     plot_Bell_pair_generation_rate(params, pbell_list=pbell_list, t_scale='days', biais=1,
-                                   files="data_simu/données_complètes_layout_opt_2_h_2_new_params_19_04_sampling_v15.txt",
+                                   files="data_simu/full_data_v2.txt",
                                    pbell_max=0.045, type='full')
 
+    # Single simulation : 
+    params = Params('surface_big_procs',
+                    AlgoOpts(n=2048, windowed=True, parallel_cnots=True),
+                    LowLevelOpts(tr=10e-6, pbell=0.025))
     # Windowed arithmetic
     print("\n"*2)
     print("Windowed Arithmetic")
@@ -602,7 +619,7 @@ if __name__ == '__main__':
     print(best_params)
     print("Best case:", best_cost, ";",  best_qubits)
     if hasattr(best_err_corr, 'nb_procs'):
-        print("Number of processors:", best_err_corr.nb_procs-1, "+ 1")
+        print("Number of processors:", best_err_corr.nb_procs-2, "+ 2")
         print("Number of qubits per proc:", best_err_corr.proc_qubits_each)
         print("Total number of physical qubits:", best_qubits)
         print("ny:", best_err_corr.ny)
@@ -616,7 +633,7 @@ if __name__ == '__main__':
     best_cost_basic, best_qubits_basic = prepare_ressources(best_params_basic)
     print("Best basic case:", best_cost_basic, ";", best_qubits_basic)
     if hasattr(best_err_corr_basic, 'nb_procs'):
-        print("Number of processors:", best_err_corr_basic.nb_procs-1, "+ 1")
+        print("Number of processors:", best_err_corr_basic.nb_procs-2, "+ 2")
         print("Number of qubits per proc:", best_err_corr_basic.proc_qubits_each)
         print("Total number of physical qubits:", best_qubits_basic)
         print("ny:", best_err_corr_basic.ny)
