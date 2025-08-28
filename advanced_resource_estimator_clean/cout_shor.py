@@ -75,7 +75,7 @@ DEF_RANGES = {'surface': dict(d1s=range(3, 30, 2),
                                                         wms=range(2, 10),
                                                         cs=range(1, 40)),
               # Hardcoded version of one proc with the same parameters as optimal for small proc
-              'surface_big_procs': dict(d1s=range(0, 2),
+              'surface_big_procs': dict(d1s=range(0, 5),
                                         d2s=(None,),
                                         ds=range(3, 51, 2),
                                         ns=(None,),
@@ -496,6 +496,16 @@ def plot_overhead_comparison(base_params: Params, pbell_list, t_scale='days', bi
         type='surface_big_procs'), biais=biais)
     monolithic_err_corr = ErrCorrCode(monolithic_params)
     monolithic_cost, monolithic_qubits = prepare_ressources(monolithic_params)
+    print("Monolithic parameters:")
+    print(monolithic_params)
+    print("Monolithic case:", monolithic_cost, ";",  monolithic_qubits)
+    print("Factory for monolithic case:", monolithic_err_corr._factory)
+    print("Number of processors:", monolithic_err_corr.nb_procs)
+    print("Number of qubits per proc:", monolithic_err_corr.proc_qubits_each)
+    print("Total number of physical qubits:", monolithic_qubits)
+
+    # Basic Arithmetic
+    print("\n"*2)
     # Calculate the overhead
     space_cost_monolithic = monolithic_err_corr.proc_qubits
     if t_scale == 'days':
@@ -584,28 +594,35 @@ if __name__ == '__main__':
     # the list of values of p_bell to test
     pbell_list = np.linspace(0.1e-2, 6e-2, num=100)
 
-    # Plot the resource needed to factorize a 2048 RSA bit integer with different
-    # p_bell while p is fixed to 0.1%
-    plot_resource_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
-                             files="data_simu/full_data_v2.txt",
-                             pbell_max=0.045, type='full')
+    # # Plot the resource needed to factorize a 2048 RSA bit integer with different
+    # # p_bell while p is fixed to 0.1%
+    # plot_resource_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
+    #                          files="data_simu/full_data_v2.txt",
+    #                          pbell_max=0.045, type='full')
 
     # Plot the overhead with respect to the monolithic approach to factorize a 2048 RSA bit integer with different
-    # p_bell and p while fixed to 0.1%
-    plot_overhead_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
-                             files="data_simu/full_data_v2.txt",
-                            pbell_max=0.045, type='full')
+    # # p_bell and p while fixed to 0.1%
+    # plot_overhead_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
+    #                          files="data_simu/full_data_v2.txt",
+    #                         pbell_max=0.045, type='full')
 
-    # Plot the Bell pair generation rate needed (worst case) to factorize a 2048 RSA bit integer
-    # with different p_bell while p is fixed to 0.1%
-    plot_Bell_pair_generation_rate(params, pbell_list=pbell_list, t_scale='days', biais=1,
-                                   files="data_simu/full_data_v2.txt",
-                                   pbell_max=0.045, type='full')
+    # # Plot the Bell pair generation rate needed (worst case) to factorize a 2048 RSA bit integer
+    # # with different p_bell while p is fixed to 0.1%
+    # plot_Bell_pair_generation_rate(params, pbell_list=pbell_list, t_scale='days', biais=1,
+    #                                files="data_simu/full_data_v2.txt",
+    #                                pbell_max=0.045, type='full')
 
     # Single simulation : 
-    params = Params('surface_big_procs',
+    # The first entry of Param may be :
+    #  'surface_small_procs' for a layout where cnot takes 2d time step but more overhead
+    #  'surface_small_procs_compact' compact layout but injection with 3 cnots
+    #  'surface_small_procs_compact_v2' compact layout but injection via lattice surgery primitives directly
+    #  This is the one used in the article
+    #  'surface_big_procs' compact layout on a single big chip, referenced as the monolithic case
+
+    params = Params('surface_small_procs_compact_v2',
                     AlgoOpts(n=2048, windowed=True, parallel_cnots=True),
-                    LowLevelOpts(tr=10e-6, pbell=0.025))
+                    LowLevelOpts(tr=10e-6, pbell=0.0))
     # Windowed arithmetic
     print("\n"*2)
     print("Windowed Arithmetic")

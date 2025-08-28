@@ -776,7 +776,6 @@ def fit_3D(data_tofit, data, P_bulk, P_seam, fit_interval, fit_3D_type, model=No
                         resid = np.concatenate((resid, list((p_log-coupled_error_model_v2(
                             ps, pb, alpha1, alpha2, alpha3,
                             psth, pbth, alphac, d))/std_err)))
-                        print('by default model V2 has been used')
             return (resid)
         # Create the Minimizer
         mini = Minimizer(objective_coupled_3d_all_para, fit_params3, nan_policy='propagate')

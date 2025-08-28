@@ -508,30 +508,8 @@ class SurfaceCode(ErrCorrCode):
     @staticmethod
     def _surf_topological_error_intern(proba, distance, nb=1):
         """Error probability due to decoherence."""
-        err = 0.1 * (proba / (7.65e-3)) ** ((distance + 1) / 2)
+        err = 0.1 * (proba / (7.43e-3)) ** ((distance + 1) / 2)
         return 1 - (1 - err) ** nb
-
-    @staticmethod
-    def _surf_topological_error_aux(p, p_bell, distance, nb_seam, nx, nb=1):
-        """Error probability due to decoherence on a patch with interfaces."""
-        alpha1 = 0.25
-        alpha2 = 0.062
-        pbth = 7.22e-3
-        psth = 0.294
-        alpha3 = 0.0129
-        alphac = 0.245
-        alpha1_tot = alpha1 * nb_seam
-        alpha3_tot = alpha3 * nb_seam
-        # Length of the routing qubit crossing all processors in units of d
-        # precisely 3+1 would be (3d + 3 + d) / d
-        alpha2_tot = alpha2 * (nx * 3 + 1) * (nb_seam + 1)
-        # Errors for X_L
-        errx = coupled_error_model_v2(p_bell, p, alpha1_tot, alpha2_tot,
-                                      alpha3_tot, psth, pbth, alphac, distance)
-        # Errors for Z_L
-        distance_z = (nx * 3 + 1) * (nb_seam + 1) * distance
-        errz = 0.0537 * (p / pbth) ** ((distance_z + 1) / 2)
-        return 1 - (1 - errx - errz) ** nb
 
     def _init_ccz_factory(self):
         """Compute the parameters of the factories."""
@@ -546,7 +524,7 @@ class SurfaceCode(ErrCorrCode):
         dz2 = factories[d1]['dz2']
         dm2 = factories[d1]['dm2']
         self._factory = PhysicalCost(L2_total_CCZ, time)
-        # Ajoute un espace de routing supplémentaire pour l'injection de l'état CCZ
+        # Add a routing space to allow the CCZ state injection with proper distance
         self._factory_qubits = factories[d1]['Qubits'] + 2*((d-dx2)*(3*dx2+dz2+dm2))+d+d/2
 
     @property
@@ -650,7 +628,7 @@ class SurfaceCodeSmallProcs(SurfaceCode):
     """Surface code, with a set of small processors.
 
     Uses Litinski factories.
-    First non-optimized Layout.
+    First non-optimized Layout although 2d timestep only for CNOT.
     """
 
     def __init__(self, params: Params):
@@ -685,7 +663,8 @@ class SurfaceCodeSmallProcs(SurfaceCode):
         nb_link_between_procs = ceil(log_qubits / nb_log_qbit_per_proc) - 1
 
         # Error estimations:
-        err_aux = self._surf_topological_error_aux(pp, pbell, d, nb_link_between_procs, nx, 1)
+        err_aux = self._surf_topological_error_aux_first_layout(pp,
+                             pbell, d, nb_link_between_procs, nx, 1)
         err_internal = self._surf_topological_error_intern(pp, d, log_qubits)
         err_internal_aux = self._surf_topological_error_intern(pp, d, 1)
 
@@ -711,6 +690,28 @@ class SurfaceCodeSmallProcs(SurfaceCode):
 
         if not self.params.algo.mesure_based_deand:
             raise ValueError("params.algo.mesure_based_deand must be 'True'!")
+        
+    @staticmethod
+    def _surf_topological_error_aux_first_layout(p, p_bell, distance, nb_seam, nx, nb=1):
+        """Error probability due to decoherence on a patch with interfaces."""
+        alpha3 = 0.053
+        alphac = 0.21
+        alpha1 = 0.098
+        alpha2 = 0.045
+        pbth = 7.2e-3
+        psth = 0.298
+        alpha1_tot = alpha1 * nb_seam
+        alpha3_tot = alpha3 * nb_seam
+        # Length of the routing qubit crossing all processors in units of d
+        # precisely nx3+1 would be (nx(3d + 3) + d) / d
+        alpha2_tot = alpha2 * (nx * 3 + 1) * (nb_seam + 1)
+        # Errors for X_L
+        errx = coupled_error_model_v2(p_bell, p, alpha1_tot, alpha2_tot,
+                                      alpha3_tot, psth, pbth, alphac, distance)
+        # Errors for Z_L
+        distance_z = (nx * 3 + 1) * (nb_seam + 1) * distance
+        errz = 0.0537 * (p / pbth) ** ((distance_z + 1) / 2)
+        return 1 - (1 - errx - errz) ** nb
 
 
 class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
@@ -718,7 +719,7 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
 
     Uses Litinski factories and the new layout with qubits on the sides.
     Here we use two distillation factories to allow parallel preparation.
-    Direct Toffoli injection.
+    Direct Toffoli injection (via CNOTs).
     With 4 d time steps for the CNOT.
     """
 
@@ -810,15 +811,15 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
     def _surf_topological_error_inner_aux(p, distance, ny, nb=1):
         """Error probability due to decoherence during a CNOT in layout 2.
         This is the error model for the merged patch inside a processor."""
-        pbth = 7.43e-3
+        pbth_reg = 7.43e-3
         # Length of the routing qubit spanning the entire processor
         length_aux = (ny + 1) * (distance + 1) / distance
 
         # Errors for X_L
-        errx = 0.05 * (p / pbth) ** ((distance + 1) / 2)
+        errx = 0.05 * (p / pbth_reg) ** ((distance + 1) / 2)
 
         # Errors for Z_L
-        errz = 0.05 * length_aux * (p / pbth) ** ((distance + 1) / 2)
+        errz = 0.05 * length_aux * (p / pbth_reg) ** ((distance + 1) / 2)
         return 1 - (1 - errx - errz) ** nb
 
     @property
@@ -829,27 +830,6 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
         """
         return 3 * self.cnot
 
-    @property
-    def ccz_interact_lattice_surgery(self):
-        """Interaction between the magic state and the target via lattice surgery.
-
-        I assume here that no parallelization is possible.
-        """
-        _, _, _, d, _, tc, tr, pp, pbell = self.params.low_level
-        log_qubits = logical_qubits(self.params, verb=False)
-        nb_link_between_procs = self.nb_procs - 1
-        ny = self.ny
-         # Compute error rates
-        # Error rate of a giant logical routing patch for an 
-        # auxiliary qubit in lattice surgery.
-        err_aux = self._surf_topological_error_aux(pp, pbell, d,
-                                                   nb_link_between_procs, ny, 1)
-        # Errors accumulate on unused qubits as well
-        err_internal = self._surf_topological_error_intern(pp, d, log_qubits)
-        interaction_error_model = (3*d * PhysicalCost(err_aux, tc)) | (
-            7 * d * PhysicalCost(err_internal, tc))
-        return interaction_error_model
-    
     @property
     def ccz_fixup(self):
         """Characteristics of the 'fixup' step.
@@ -870,7 +850,7 @@ class SurfaceCodeSmallProcs_CompactLayout(SurfaceCode):
 
         Warning: the preparation of the magic state can generally be parallelized.
         """
-        return self._factory | self.ccz_interact_fixup
+        return self._factory | self.ccz_interact_fixup + self.init
 
     @property
     def maj(self):
@@ -988,17 +968,17 @@ class SurfaceCodeSmallProcs_CompactLayout_V2(SurfaceCode):
 
     @staticmethod
     def _surf_topological_error_inner_aux(p, distance, ny, nb=1):
-        """Error probability due to decoherence during a CNOT in layout 2.
+        """Error probability due to decoherence during a MZZ in a CNOT in layout 2.
         This is the error model for the merged patch inside a processor."""
-        pbth = 7.43e-3
+        pbth_reg = 7.43e-3
         # Length of the routing qubit spanning the entire processor
         length_aux = (ny + 1) * (distance + 1) / distance
 
         # Errors for X_L
-        errx = 0.05 * (p / pbth) ** ((distance + 1) / 2)
+        errx = 0.05 * (p / pbth_reg) ** ((distance + 1) / 2)
 
         # Errors for Z_L
-        errz = 0.05 * length_aux * (p / pbth) ** ((distance + 1) / 2)
+        errz = 0.05 * length_aux * (p / pbth_reg) ** ((distance + 1) / 2)
         return 1 - (1 - errx - errz) ** nb
 
     @property
@@ -1042,7 +1022,7 @@ class SurfaceCodeSmallProcs_CompactLayout_V2(SurfaceCode):
 
         Warning: the preparation of the magic state can generally be parallelized.
         """
-        return self._factory | self.ccz_interact_fixup
+        return self._factory | self.ccz_interact_fixup 
 
     @property
     def maj(self):
@@ -1100,8 +1080,7 @@ class SurfaceCodeBigProcs(SurfaceCode):
         self.mesure = tr / tc * PhysicalCost(err, tc)
 
         # Processor size calculation
-        nb_log_qbit_per_proc = log_qubits + 2 * ceil((self._factory_qubits + 1) / (
-            (3 * d + 2) * (d + 1)) - 2)
+        nb_log_qbit_per_proc = log_qubits # We have only one processor
         ny = nb_log_qbit_per_proc / 2
         self.nb_procs = 1
         self.proc_qubits_each = proc_qubits_monolythic(log_qubits/2, d)+ 2 * self._factory_qubits
@@ -1321,16 +1300,15 @@ def find_max_product(threshold, f, nx_max=10, ny_max=10):
 
 
 def find_size_layout_v2(threshold, f, n_max=100):
-    """Find the values of n1 and n2 (1 <= n1, n2 <= n_max) that maximize n1 * n2.
+    """Find the values of ny.
 
     Ensure f(n) <= threshold.
 
     param:
         threshold: Threshold value for f(n).
         f: Function that takes n1 and n2 as arguments and returns a value.
-        n_max : maximal value for nx, ny
-    return: Tuple (n1, n2, max_product) where n1 and n2 are the optimal values
-             and max_product is their product.
+        n_max : maximal value for ny
+    return: Tuple (ny, nb log qubit per proc).
     """
     n = 1
     nb_log_qbit_per_proc = 2*n

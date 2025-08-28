@@ -1,6 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""threshold estimation for distributed surface code.
+"""
+This module provides tools and functions for estimating the threshold in distributed surface code experiments,
+with a focus on telemeasurement and multi-chip quantum circuit simulations.
+
+Key functionalities include:
+- Loading and preprocessing simulation data for distributed surface code experiments.
+- Statistical analysis and threshold estimation using various fitting and minimization techniques.
+- Visualization of results, including threshold curves and error rate plots.
+
+Typical usage involves running the main script to process simulation data,
+fit threshold models, and generate summary figures for analysis.
+
+Dependencies:
+- numpy, scipy, matplotlib (for data handling and visualization)
+- tqdm (for progress bars)
+- os (for file and path operations)
+- stim, sinter (for quantum circuit simulation)
+- lmfit (for model fitting and minimization)
+- IPython.display (for display utilities)
+- Custom modules: Coordinates, fitting, noise_v2
 """
 from collections import namedtuple
 import scipy
@@ -946,7 +965,7 @@ def generate_example_tasks(kind, rep, probas):
     """
     # As a reminder, Probas=['Hadam','idle_data','idle_bell','depol', 'prep', 'mes', 'bell']
     for p in tqdm([0.0001, 0.0003, 0.0005, 0.0006, 0.0007, 0.0008, 0.0009, 0.001, 0.002, 0.003,
-                   0.004, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3], desc='Outer loop'):
+                   0.004, 0.005, 0.01, 0.02, 0.05, 0.1], desc='Outer loop'):
         for d in tqdm([3, 5, 7, 9, 11], desc='Inner loop', leave=False):
             yield sinter.Task(
                 circuit=gen_memory(d, d, rep(d), kind, None,
@@ -1044,7 +1063,7 @@ def generate_telemesures_tasks(kind, p_bell, version, rep):
 
 
 def splitted_surface_code_pseudothreshold(kind='z', p_bell=1e-1, version=2, rep=nbr_cycle, fits=[
-        'correlated contributions'], read_file=None):
+        ''], read_file=None):
     """Sample circuits of splitted surface code at fixed p_bell."""
     if read_file is None:
         samples = _collect_and_print(generate_telemesures_tasks(
@@ -1146,7 +1165,7 @@ def generate_telemesures_tasks3(kind, p, version, rep):
 
 
 def splitted_surface_code_pseudothreshold3(kind='z', p=1e-3, version=2, rep=nbr_cycle, fits=[
-        'correlated contributions'], read_file=None):
+        ''], read_file=None):
     """Sample the logical error rate of splitted surface code with fixed p_bulk."""
     if read_file is None:
         samples = _collect_and_print(generate_telemesures_tasks3(kind, p, version, rep), fits=fits,
@@ -1202,22 +1221,36 @@ def splitted_surface_code_pseudothreshold_naive_split(kind='z', p=1e-3,
 
 
 # %%% Circuit for 3D fit, free p_bulk and p_bell.
-def generate_telemesures_tasks_3d(P_bulk, P_seam, kind, rep):
+def generate_telemesures_tasks_3d(P_bulk, P_seam, kind, rep, noise_model):
     """Generate the circuits for the 3D fit."""
-    for p in tqdm(P_bulk, desc='Loop on p_bulk'):
-        for p_bell in tqdm(P_seam, desc='Inner loop on p_bell', leave=False):
-            for d in [3, 5, 7, 9, 11, 13]:
-                yield sinter.Task(
-                    circuit=gen_memory(d, d, rep(d), kind, d+1,
-                                       Probas(p, p, p, p, p, p, p_bell)),
-                    json_metadata={
-                        'd': d,
-                        'p_bell': p_bell,
-                        'p': p,
-                        'k': rep(d)
-                    },
-                )
-
+    if noise_model == 'regular':
+        for p in tqdm(P_bulk, desc='Loop on p_bulk'):
+            for p_bell in tqdm(P_seam, desc='Inner loop on p_bell', leave=False):
+                for d in [3, 5, 7, 9, 11, 13]:
+                    yield sinter.Task(
+                        circuit=gen_memory(d, d, rep(d), kind, d+1,
+                                        Probas(p, p, p, p, p, p, p_bell)),
+                        json_metadata={
+                            'd': d,
+                            'p_bell': p_bell,
+                            'p': p,
+                            'k': rep(d)
+                        },
+                    )
+    elif noise_model == 'SI1000':
+        for p in tqdm(P_bulk, desc='Loop on p_bulk'):
+            for p_bell in tqdm(P_seam, desc='Inner loop on p_bell', leave=False):
+                for d in [3, 5, 7, 9, 11, 13]:
+                    yield sinter.Task(
+                        circuit=gen_memory(d, d, rep(d), kind, d+1,
+                                        Probas(p/10, p/10, p/10, p, 2*p, 5*p, p_bell)),
+                        json_metadata={
+                            'd': d,
+                            'p_bell': p_bell,
+                            'p': p,
+                            'k': rep(d)
+                        },
+                    )
 # %%Several seams threshold estimation
 
 
@@ -1313,9 +1346,59 @@ def multiple_seam_surface_code_pseudothreshold(kind='z', p_bell=None, p=None, re
 def surface_code_pseudotreshold(kind, data_type, version=2,
                                 ratio=10, p_fixed=1e-3, p_bell_fixed=1e-1,
                                 probas=Probas(1, 1, 1, 1, 1, 1, 0), fits=[
-                                    'correlated contributions'],
+                                    ''],
                                 read_file=None):
-    """Single function to call to do a simulation."""
+    """
+    Runs a surface code threshold or pseudothreshold simulation
+    for various data types and configurations.
+
+    This function serves as a unified entry point to perform different
+    types of threshold or pseudothreshold simulations for distributed
+    surface codes, depending on the specified data type and parameters.
+
+    Parameters
+    ----------
+    kind : str
+        The type of surface code or error model to simulate, 'x' or 'z'.
+        note that the frontier is always along 'x' logical.
+    data_type : str
+        Specifies the simulation mode. Options include:
+        - 'no split': Standard threshold estimation without splitting.
+        - 'ratio': Pseudothreshold estimation with a given seam/bulk error ratio.
+        - 'p fixed': Pseudothreshold estimation with a fixed bulk error rate.
+        - 'naive split p fixed': straight splitting pseudothreshold with fixed bulk error.
+        - 'p_bell fixed': Pseudothreshold estimation with a fixed Bell pair error rate.
+    version : int, optional
+        Version of the simulation to use (default: 2).
+        2 is teleported measurement, 1 is teleported cnots.
+    ratio : float, optional
+        Ratio between seam and bulk error rates (used if data_type='ratio', default: 10).
+    p_fixed : float, optional
+        Fixed value for the bulk error rate (used if data_type='p fixed' or 'naive split p fixed', default: 1e-3).
+    p_bell_fixed : float, optional
+        Fixed value for the Bell pair error rate (used if data_type='p_bell fixed', default: 1e-1).
+    probas : Probas, optional
+        Probability configuration for the error model (default: Probas(1, 1, 1, 1, 1, 1, 0)).
+    fits : list of str, optional
+        List of fitting methods or models to use. Possible values include:
+            - ''    (doesn't do any fit)
+            - 'correlated contributions full'
+            - 'two contributions'
+            - 'critical exponent'
+            - 'general with error'
+            - 'general without error'
+            - 'slopes'
+            - 'slope+alpha'
+            - 'crossing asymptots'
+        (default: ['']).
+    read_file : str or None, optional
+        Path to a file containing precomputed simulation data to load instead of running new simulations.
+
+    Returns
+    -------
+    None
+        The function generates plots and saves results to files as a side effect.
+    """
     if data_type == 'no split':
         surface_code_threshold(kind=kind, probas=probas)
     if data_type == 'ratio':
@@ -1359,7 +1442,8 @@ def _3d_fit_sample(p_bulk_min, p_bulk_max, p_seam_min, p_seam_max, kind='z', lat
                    file_path='data_simu/last_simu.csv',
                    read_file=None,
                    fit_interval=(0., 1., 0., 1., 100.),
-                   fit_3D_type=['naive']):
+                   fit_3D_type=['naive'],
+                   noise_model='regular'):
     """Perform a 3d fit of the naive ansatz over the 3d space.
 
     Every parameters of the ansatz are fit
@@ -1372,7 +1456,7 @@ def _3d_fit_sample(p_bulk_min, p_bulk_max, p_seam_min, p_seam_max, kind='z', lat
     P_seam = np.logspace(np.log10(p_seam_min), np.log10(p_seam_max), num=lattice_size, base=10)
     # collect the result from circuit sampling with sinter
     if read_file is None:
-        samples = _collect(generate_telemesures_tasks_3d(P_bulk, P_seam, kind, rep),
+        samples = _collect(generate_telemesures_tasks_3d(P_bulk, P_seam, kind, rep, noise_model),
                            file=file_path)
     else:
         samples = sinter.read_stats_from_csv_files(read_file)
@@ -1380,6 +1464,7 @@ def _3d_fit_sample(p_bulk_min, p_bulk_max, p_seam_min, p_seam_max, kind='z', lat
     data_tofit, data = prepare_data(samples, data_type='3d', fits=[])
     data_tofit, out = fit_3D(data_tofit, data, P_bulk, P_seam,  fit_interval, fit_3D_type)
     return data_tofit, out, P_bulk, P_seam
+
 
 # %% Storing of the last simulation
 # For convenience we always store the last simulation in a temporary file, here we delete it
@@ -1404,10 +1489,17 @@ if __name__ == '__main__':
     # Uncomment to run a simulation
 
     # Regular rotated surface code simulation
-
+    # Probas namedtuple is of the form ['onequbitgate', 'idle_data', 'idle_bell',
+    #  'twoqubitgate', 'prep', 'mes', 'bell'] it applies a coefficient in front of each p
+    #  Probas(1, 1, 1, 1, 1, 1, 1) applies noise of parameter p to every operations
     # surface_code_threshold(kind='z', rep=lambda x: 3*x,
     #                        probas=Probas(1, 1, 1, 1, 1, 1, 1), filtered=True,
-    #                        read_file='data_simu/regular_surface_code.csv')
+    #                        read_file='data_simu/regular_surface.csv')
+    
+    # SI 1000 like Noise model 
+    # surface_code_threshold(kind='z', rep=lambda x: 3*x,
+    #                        probas=Probas(1/10, 1/10, 1/10, 1, 2, 5, 1), filtered=True,
+    #                        read_file='data_simu/regular_surface_code_SI1000.csv')
 
     # Regular rotated surface code simulation and fit of a critical order ansatz
 
@@ -1422,14 +1514,13 @@ if __name__ == '__main__':
     # surface_code_pseudotreshold(kind='z', data_type='p_bell fixed',
     #                             version=2, p_bell_fixe=0.)
 
-    # Splitted surface code with one interface (as fig.2) with p or p_bell fixed
-
-    # surface_code_pseudotreshold(kind='z', data_type='p fixed', version=2, p_fixed=1e-3, fits=[
-    #     'correlated contributions full'],
-    #     read_file='data_simu/dx2d_one_seam_d=3-15.txt')
-
     # surface_code_pseudotreshold(kind='z', data_type='p_bell fixed', version=2, p_bell_fixed=1e-2)
 
+    # Check that the Z distance is not reduced by any hook errors:
+    # surface_code_pseudotreshold(kind='x', data_type='p_bell fixed', version=2, p_bell_fixed=0e-2, fits=[
+    #      'slopes'],
+    #      read_file='data_simu/one_seam_d=3-11_x_state_p_bell_fixed.csv')
+    
     # Full 3D fit on several values of p and p_bell with the naive ansatz
 
     # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
@@ -1440,12 +1531,20 @@ if __name__ == '__main__':
 
     # Full 3D fit on several values of p and p_bell with the full ansatz
 
+    # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
+    #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
+    #     read_file='data_simu/sampling_3d_v15.csv',
+    #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
+    #     fit_3D_type=['full'])
+
+    # Full 3D fit on several values of p and p_bell with the full ansatz
+    # with SI1000 like model
     data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
         1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
-        read_file='data_simu/sampling_3d_v15.csv',
+        file_path='data_simu/sampling_3d_SI1000.csv',
         fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
-        fit_3D_type=['full'])
-
+        fit_3D_type=['full'],
+        noise_model='SI1000')
     # Simulation of a 2 interface rectangular patch reproducing the layout spacing
     # verification of the validity of the logical error rate fitted above in the multi-seam setting.
 
