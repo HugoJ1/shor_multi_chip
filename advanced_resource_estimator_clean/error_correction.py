@@ -392,10 +392,11 @@ class ErrCorrCode(ABC):
         return 2*self.gate1 + nb_cnots*self.cnot + (2**w - 2)*self.and_deand
 
     def unary_ununairy(self, size=None):
-        """Cost of unary iteration followed by its uncomputation.
+        """Cost of unary conversion followed by its uncomputation.
 
         Includes initialization and destruction of qubits in the
         unary representation (via self.and_deand).
+        size is the size of the created register storing the unary representation.
         """
         # The initial NOT is not counted as it is handled with the initialization of the qubit.
         if size is None:
@@ -410,9 +411,9 @@ class ErrCorrCode(ABC):
         if w is None and n is None:
             w, n = self._defaul_lookup_sizes()
         return (n*self.mesure
-                + self.unary_ununairy(floor(w/2))
+                + self.unary_ununairy(2**floor(w/2))
                 # + 2*floor(w/2)*self.gate1  # CZ same cost as CNOT
-                + self.lookup(w=ceil(w/2), n=floor(w/2)))
+                + self.lookup(w=ceil(w/2), n=2**floor(w/2)))
 
     def look_unlookup(self, w=None, n=None):
         """Computation/uncomputation of QROM."""
@@ -1102,7 +1103,7 @@ class SurfaceCodeBigProcs(SurfaceCode):
     #     # this step because it adds a Hadamard that can be done in parallel with
     #     # the first two CNOTs.
     #     return 3 * self.cnot
-        
+    
     @property
     def ccz_interact(self):
         """Interaction between the magic state and the target via lattice surgery.

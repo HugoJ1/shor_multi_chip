@@ -620,9 +620,10 @@ if __name__ == '__main__':
     #  This is the one used in the article
     #  'surface_big_procs' compact layout on a single big chip, referenced as the monolithic case
 
-    params = Params('surface_small_procs_compact_v2',
+    params = Params('surface_big_procs',
                     AlgoOpts(n=2048, windowed=True, parallel_cnots=True),
-                    LowLevelOpts(tr=10e-6, pbell=0.0))
+                    LowLevelOpts(tr=10e-6,pp=1e-4, pbell=0.0))
+    
     # Windowed arithmetic
     print("\n"*2)
     print("Windowed Arithmetic")
