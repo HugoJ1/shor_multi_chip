@@ -597,19 +597,19 @@ if __name__ == '__main__':
     # # Plot the resource needed to factorize a 2048 RSA bit integer with different
     # # p_bell while p is fixed to 0.1%
     # plot_resource_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
-    #                          files="data_simu/full_data_v2.txt",
+    #                          files="data_simu/full_data_v3.txt",
     #                          pbell_max=0.045, type='full')
 
-    # Plot the overhead with respect to the monolithic approach to factorize a 2048 RSA bit integer with different
-    # # p_bell and p while fixed to 0.1%
+    # # Plot the overhead with respect to the monolithic approach to factorize a 2048 RSA bit integer with different
+    # # # p_bell and p while fixed to 0.1%
     # plot_overhead_comparison(params, pbell_list=pbell_list, t_scale='days', biais=1,
-    #                          files="data_simu/full_data_v2.txt",
+    #                          files="data_simu/full_data_v3.txt",
     #                         pbell_max=0.045, type='full')
 
-    # # Plot the Bell pair generation rate needed (worst case) to factorize a 2048 RSA bit integer
-    # # with different p_bell while p is fixed to 0.1%
+    # # # Plot the Bell pair generation rate needed (worst case) to factorize a 2048 RSA bit integer
+    # # # with different p_bell while p is fixed to 0.1%
     # plot_Bell_pair_generation_rate(params, pbell_list=pbell_list, t_scale='days', biais=1,
-    #                                files="data_simu/full_data_v2.txt",
+    #                                files="data_simu/full_data_v3.txt",
     #                                pbell_max=0.045, type='full')
 
     # Single simulation : 
@@ -620,9 +620,9 @@ if __name__ == '__main__':
     #  This is the one used in the article
     #  'surface_big_procs' compact layout on a single big chip, referenced as the monolithic case
 
-    params = Params('surface_big_procs',
+    params = Params('surface_small_procs_compact_v2',
                     AlgoOpts(n=2048, windowed=True, parallel_cnots=True),
-                    LowLevelOpts(tr=10e-6,pp=1e-4, pbell=0.0))
+                    LowLevelOpts(tr=10e-6,pp=1e-3, pbell=0.0))
     
     # Windowed arithmetic
     print("\n"*2)

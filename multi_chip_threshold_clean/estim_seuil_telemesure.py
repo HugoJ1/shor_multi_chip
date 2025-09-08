@@ -1531,20 +1531,20 @@ if __name__ == '__main__':
 
     # Full 3D fit on several values of p and p_bell with the full ansatz
 
-    # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
-    #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
-    #     read_file='data_simu/sampling_3d_v15.csv',
-    #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
-    #     fit_3D_type=['full'])
+    data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
+        1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
+        read_file='data_simu/sampling_3d_v15.csv',
+        fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
+        fit_3D_type=['full'])
 
     # Full 3D fit on several values of p and p_bell with the full ansatz
     # with SI1000 like model
-    data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
-        1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
-        file_path='data_simu/sampling_3d_SI1000.csv',
-        fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
-        fit_3D_type=['full'],
-        noise_model='SI1000')
+    # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
+    #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
+    #     file_path='data_simu/sampling_3d_SI1000.csv',
+    #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
+    #     fit_3D_type=['full'],
+    #     noise_model='SI1000')
     # Simulation of a 2 interface rectangular patch reproducing the layout spacing
     # verification of the validity of the logical error rate fitted above in the multi-seam setting.
 
