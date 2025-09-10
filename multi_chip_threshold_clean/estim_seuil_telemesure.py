@@ -1072,7 +1072,7 @@ def splitted_surface_code_pseudothreshold(kind='z', p_bell=1e-1, version=2, rep=
         samples = _collect_and_print(generate_telemesures_tasks(
             kind, p_bell, version, rep), fits=fits, data_type='p_bell fixed', read_file=read_file)
     _plot(samples, x_axis='p', x_label="Bulk error rate",
-          title=f"Splitted Surface Code ; kind={kind} ; p_bell={p_bell}; rep={rep}",
+          title=f"Splitted Surface Code ; kind={kind} ; p_bell={p_bell}",
           filename="splitted_surface_code_p_bell_fixed_" + kind + "_version_" + str(version) + ".pdf")
     # Plot the logical error rate per cycle
     _plot_per_round(samples, title=r"$p_{\text{Bell}}$="+f"{p_bell}",
@@ -1437,7 +1437,7 @@ def plot_error_model(kind, d):
 # %% Fit 3D
 
 
-def _3d_fit_sample(p_bulk_min, p_bulk_max, p_seam_min, p_seam_max, kind='z', lattice_size=10,
+def full_fit_sample(p_bulk_min, p_bulk_max, p_seam_min, p_seam_max, kind='z', lattice_size=10,
                    rep=nbr_cycle,
                    file_path='data_simu/last_simu.csv',
                    read_file=None,
@@ -1494,7 +1494,7 @@ if __name__ == '__main__':
     #  Probas(1, 1, 1, 1, 1, 1, 1) applies noise of parameter p to every operations
     # surface_code_threshold(kind='z', rep=lambda x: 3*x,
     #                        probas=Probas(1, 1, 1, 1, 1, 1, 1), filtered=True,
-    #                        read_file='data_simu/regular_surface.csv')
+    #                        read_file='data_simu/regular_surface_code.csv')
     
     # SI 1000 like Noise model 
     # surface_code_threshold(kind='z', rep=lambda x: 3*x,
@@ -1523,7 +1523,7 @@ if __name__ == '__main__':
     
     # Full 3D fit on several values of p and p_bell with the naive ansatz
 
-    # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
+    # data_tofit, out, P_bulk, P_seam = full_fit_sample(
     #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
     #     read_file='data_simu/sampling_3d_v15.csv',
     #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
@@ -1531,15 +1531,15 @@ if __name__ == '__main__':
 
     # Full 3D fit on several values of p and p_bell with the full ansatz
 
-    data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
-        1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
-        read_file='data_simu/sampling_3d_v15.csv',
-        fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
-        fit_3D_type=['full'])
+    # data_tofit, out, P_bulk, P_seam = full_fit_sample(
+    #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
+    #     read_file='data_simu/sampling_3d_v15.csv',
+    #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
+    #     fit_3D_type=['full'])
 
     # Full 3D fit on several values of p and p_bell with the full ansatz
     # with SI1000 like model
-    # data_tofit, out, P_bulk, P_seam = _3d_fit_sample(
+    # data_tofit, out, P_bulk, P_seam = full_fit_sample(
     #     1e-4, 1e-3, 1e-3, 1e-1, lattice_size=22,
     #     file_path='data_simu/sampling_3d_SI1000.csv',
     #     fit_interval=(5e-4, 1e-3, 0., 5e-2, 0.5),
